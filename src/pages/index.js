@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import Layout from '../components/Layout'
 import Seo from '../components/Seo'
+import Phone from '../components/Phone'
 import firebase from '../components/firebase'
 
 const Hero = () => {
@@ -50,10 +51,10 @@ const Card = ({ name, description, contacts }) => {
         <div class="flex items-center">
           {Object.keys(contacts).map(key => {
             if(key.indexOf('whatsapp') >=0){
-              return <a className='pr-4' target='_blank' href={'https://api.whatsapp.com/send?phone=+55'+contacts[key]+'&text=Vi seu telefone no VaiDarCerto.org. Gostaria de comprar de voce.'}>Enviar mensagem no: {contacts[key]}</a>
+              return <a title='Enviar mensagem no Whatsapp.' className='pr-4 hover:underline' target='_blank' href={'https://api.whatsapp.com/send?phone=+55'+contacts[key]+'&text=Vi seu telefone no VaiDarCerto.org. Gostaria de comprar de voce.'}>Whatsapp: <Phone number={contacts[key]} /></a>
             }
             if(key.indexOf('instagram') >=0){
-              return <a className='pr-4' target='_blank' href={'https://instagram.com/'+contacts[key]}>@{contacts[key]}</a>
+              return <a title='Acessar perfil no instagram.' className='pr-4 hover:underline' target='_blank' href={'https://instagram.com/'+contacts[key]}>@{contacts[key]}</a>
             }
           })}
         </div>
