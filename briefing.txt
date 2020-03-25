@@ -1,0 +1,10 @@
+Vai Dar Certo
+VaiDarCerto.org
+- Aprendizado
+- Caixa de Ideias
+- Classificados:
+  - uf / cidade
+  - nome
+  - contatos:
+    - telefones / instagram / facebook
+  - descrição (horarios de atendimento)
