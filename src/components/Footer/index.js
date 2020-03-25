@@ -11,7 +11,7 @@ const Footer = () => {
                   <p class="py-4 text-gray-600 text-sm">
                     O VaiDarCerto é uma iniciativa para ajudar o pequeno empresário e profissionais liberais a superarem este momente de turbulência, seja por meio de transformar e divulgar seu negócio, como preparar-se para voltar as atividades no futuro breve.
                   </p>
-                  <p class="py-4 text-gray-600 text-sm">Versão inicial por: <a className='underline' href='https://instagram/tuliomfaria'>@tuliomfaria</a> <a className='underline' href='https://instagram/devpleno'>@devpleno</a> <a className='underline' href='https://instagram/id49.digital'>@id49.digital</a></p>
+                  <p class="py-4 text-gray-600 text-sm">Versão inicial por: <a className='underline' href='https://instagram.com/tuliomfaria'>@tuliomfaria</a> <a className='underline' href='https://instagram.com/devpleno'>@devpleno</a> <a className='underline' href='https://instagram.com/id49.digital'>@id49.digital</a></p>
               </div>
             </div>
             <div class="flex w-full lg:w-1/2 lg:justify-end lg:text-right">
@@ -20,6 +20,9 @@ const Footer = () => {
                   <ul class="list-reset items-center text-sm pt-3">
                     <li>
                         <a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:underline py-1" href="https://instagram.com/simvaidarcerto">instagram.com/simvaidarcerto</a>
+                    </li>
+                    <li>
+                        <a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:underline py-1" href="https://github.com/id49/vaidarcerto.org">Contribua: github.com/id49/vaidarcerto.org</a>
                     </li>
                   </ul>
               </div>
