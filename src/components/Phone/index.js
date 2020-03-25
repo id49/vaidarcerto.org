@@ -4,4 +4,5 @@ const Phone = ({ number }) => {
   const num2 = number.substring(7, 11)
   return `(${ddd}) ${num1}-${num2}`
 }
+
 export default Phone
