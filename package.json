@@ -4,14 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gatsby build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "firebase": "^7.6.0",
     "gatsby": "^2.20.2",
+    "gatsby-plugin-favicon": "^3.1.6",
+    "gatsby-plugin-postcss": "^2.2.0",
+    "gatsby-plugin-react-helmet": "^3.2.0",
+    "gatsby-source-firestore": "^1.0.3",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-helmet": "^5.2.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^1.2.0"
   }
 }
