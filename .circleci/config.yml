@@ -20,6 +20,9 @@ jobs:
           paths:
             - ./node_modules
       - run:
+          name: Preparing private credentials
+          command: echo "$FIREBASE_SERVER" >> "./firebase-private.json"
+      - run:
           name: Gatsby Build
           command: npm run build
       - run:
