@@ -22,7 +22,7 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
-    "tailwindcss": "^1.2.0",
-    "firebase-tools": "^7.16.1"
+    "firebase-tools": "^7.16.1",
+    "tailwindcss": "^1.2.0"
   }
 }
