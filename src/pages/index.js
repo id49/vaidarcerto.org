@@ -11,7 +11,7 @@ const Hero = () => {
         <div class="flex flex-col w-full md:w-3/5 justify-center items-start text-center md:text-left">
           <p class="uppercase tracking-loose w-full">Uma iniciativa sem fins-lucrativos</p>
           <h1 class="my-4 text-5xl font-bold leading-tight">Para ajudar pequenas empresas e profissionais liberais</h1>
-          <p class="leading-normal text-2xl mb-8">a superarem este momente difícil com muito conhecimento e reconhecimento.</p>
+          <p class="leading-normal text-2xl mb-8">a superarem este momento difícil com muito conhecimento e reconhecimento.</p>
         </div>
         <div class="w-full md:w-2/5 py-6 text-center">
           <img class="w-full md:w-4/5 z-50" src={require('../assets/hero.png')} />

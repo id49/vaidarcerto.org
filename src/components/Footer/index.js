@@ -9,7 +9,7 @@ const Footer = () => {
               <div class="px-8">
                   <h3 class="font-bold text-gray-900">Sobre o VaiDarCerto.org</h3>
                   <p class="py-4 text-gray-600 text-sm">
-                    O VaiDarCerto é uma iniciativa para ajudar o pequeno empresário e profissionais liberais a superarem este momente de turbulência, seja por meio de transformar e divulgar seu negócio, como preparar-se para voltar as atividades no futuro breve.
+                    O VaiDarCerto é uma iniciativa para ajudar o pequeno empresário e profissionais liberais a superarem este momento de turbulência, seja por meio de transformar e divulgar seu negócio, como preparar-se para voltar as atividades no futuro breve.
                   </p>
                   <p class="py-4 text-gray-600 text-sm">Versão inicial por: <a className='underline' href='https://instagram.com/tuliomfaria'>@tuliomfaria</a> <a className='underline' href='https://instagram.com/devpleno'>@devpleno</a> <a className='underline' href='https://instagram.com/id49.digital'>@id49.digital</a></p>
               </div>
