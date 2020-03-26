@@ -11,8 +11,7 @@ const Header = ({ home = false }) => {
     <nav id='header' className={'fixed w-full z-30 top-0 '+menuClass}>
 
       <div className='w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2'>
-          
-        <div className='pl-4 flex items-center'>
+        <div className='flex items-center'>
           <Link to='/' className='toggleColour no-underline hover:no-underline font-bold text-2xl lg:text-4xl'> 
             { /* <svg className='h-8 fill-current inline' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512.005 512.005'>
             <rect fill='#2a2a31' x='16.539' y='425.626' width='479.767' height='50.502' transform='matrix(1,0,0,1,0,0)' />

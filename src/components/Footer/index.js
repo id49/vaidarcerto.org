@@ -6,7 +6,7 @@ const Footer = () => {
       <div class="container mx-auto flex py-8">
         <div class="w-full mx-auto flex flex-wrap">
             <div class="flex w-full lg:w-1/2 ">
-              <div class="px-8">
+              <div>
                   <h3 class="font-bold text-gray-900">Sobre o VaiDarCerto.org</h3>
                   <p class="py-4 text-gray-600 text-sm">
                     O VaiDarCerto é uma iniciativa para ajudar o pequeno empresário e profissionais liberais a superarem este momento de turbulência, seja por meio de transformar e divulgar seu negócio, como preparar-se para voltar as atividades no futuro breve.
@@ -15,7 +15,7 @@ const Footer = () => {
               </div>
             </div>
             <div class="flex w-full lg:w-1/2 lg:justify-end lg:text-right">
-              <div class="px-8">
+              <div>
                   <h3 class="font-bold text-gray-900">Siga-nos</h3>
                   <ul class="list-reset items-center text-sm pt-3">
                     <li>
