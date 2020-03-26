@@ -6,16 +6,16 @@ import firebase from '../components/firebase'
 
 const Hero = () => {
   return(
-    <div class="pt-24">
+    <div className="pt-24">
       <Seo title='Vamos ajudar o pequeno empresário a passar por essa turbulência' />
-      <div class="container mx-auto flex flex-wrap flex-col md:flex-row items-center">
-        <div class="flex flex-col w-full md:w-3/5 justify-center items-start text-center md:text-left">
-          <p class="uppercase tracking-loose w-full text-white">Uma iniciativa sem fins-lucrativos</p>
-          <h1 class="my-4 text-5xl font-bold leading-tight text-white">Para ajudar pequenas empresas e profissionais liberais</h1>
-          <p class="leading-normal text-2xl mb-8 text-white">a superarem este momento difícil com muito conhecimento e reconhecimento.</p>
+      <div className="container mx-auto flex flex-wrap flex-col md:flex-row items-center">
+        <div className="flex flex-col w-full md:w-3/5 justify-center items-start text-center md:text-left">
+          <p className="uppercase tracking-loose w-full text-white">Uma iniciativa sem fins-lucrativos</p>
+          <h1 className="my-4 text-5xl font-bold leading-tight text-white">Para ajudar pequenas empresas e profissionais liberais</h1>
+          <p className="leading-normal text-2xl mb-8 text-white">a superarem este momento difícil com muito conhecimento e reconhecimento.</p>
         </div>
-        <div class="w-full md:w-2/5 py-6 text-center">
-          <img class="w-full md:w-4/5 z-50" src={require('../assets/hero.png')} />
+        <div className="w-full md:w-2/5 py-6 text-center">
+          <img className="w-full md:w-4/5 z-50" src={require('../assets/hero.png')} />
         </div>
       </div>
     </div>
@@ -23,7 +23,7 @@ const Hero = () => {
 }
 const EndWave = () => {
   return (
-    <div class="relative -mt-12 lg:-mt-24">
+    <div className="relative -mt-12 lg:-mt-24">
       <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg">
       <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
       <g transform="translate(-2.000000, 44.000000)" fill="#FFFFFF" fill-rule="nonzero">
@@ -42,13 +42,13 @@ const EndWave = () => {
 
 const Card = ({ name, description, contacts }) => {
   return(
-    <div class="w-full mt-4 mb-4">
-      <div class="border border-gray-400 bg-white rounded p-4 flex flex-col justify-between leading-normal">
-        <div class="mb-4">
-          <div class="text-gray-900 font-bold text-xl mb-2">{name}</div>
-          <p class="text-gray-700 text-base">{description}</p>
+    <div className="w-full mt-4 mb-4">
+      <div className="border border-gray-400 bg-white rounded p-4 flex flex-col justify-between leading-normal">
+        <div className="mb-4">
+          <div className="text-gray-900 font-bold text-xl mb-2">{name}</div>
+          <p className="text-gray-700 text-base">{description}</p>
         </div>
-        <div class="flex items-center">
+        <div className="flex items-center">
           {Object.keys(contacts).map(key => {
             if(key.indexOf('whatsapp') >=0){
               return <a title='Enviar mensagem no Whatsapp.' className='pr-4 hover:underline' target='_blank' href={'https://api.whatsapp.com/send?phone=+55'+contacts[key]+'&text=Vi seu telefone no VaiDarCerto.org. Gostaria de comprar de voce.'}>Whatsapp: <Phone number={contacts[key]} /></a>
