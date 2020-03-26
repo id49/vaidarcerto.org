@@ -4,6 +4,9 @@ import Seo from '../components/Seo'
 import Phone from '../components/Phone'
 import firebase from '../components/firebase'
 
+import marketing from '../assets/undraw_mobile_marketing_iqbr.png'
+import education from '../assets/undraw_Graduation_ktn0.png'
+
 const Hero = () => {
   return(
     <div className="pt-24">
@@ -45,7 +48,7 @@ const Card = ({ name, description, contacts }) => {
     <div className="w-full mt-4 mb-4">
       <div className="border border-gray-400 bg-white rounded p-4 flex flex-col justify-between leading-normal">
         <div className="mb-4">
-          <div className="text-gray-900 font-bold text-xl mb-2">{name}</div>
+          <div className="text-gray-800 font-bold text-xl mb-2">{name}</div>
           <p className="text-gray-700 text-base">{description}</p>
         </div>
         <div className="flex items-center">
@@ -57,6 +60,26 @@ const Card = ({ name, description, contacts }) => {
               return <a title='Acessar perfil no instagram.' className='pr-4 hover:underline' target='_blank' href={'https://instagram.com/'+contacts[key]}>@{contacts[key]}</a>
             }
           })}
+        </div>
+      </div>
+    </div>
+  )
+}
+const Callouts = () => {
+  return(
+    <div className='container mx-auto'>
+      <h3 className="w-full py-2 text-5xl font-bold leading-tight text-center text-gray-800">Como funciona?</h3>
+      {/* <p className="text-gray-600 mb-8">Acreditamos que o pequeno empresário ou profissional liberal pode estar em 3 situações: com atividades totalmente suspensas, atividades adaptadas (trabalhando somente com entregas ou com aulas online) ou trabalhando horas extras por se tratar de um serviço essencial.</p> */}
+      <div className="flex flex-wrap">
+        <div className="flex flex-col items-center pr-8 w-5/6 sm:w-1/2 py-6">
+          <img src={marketing} width={320} />
+          <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">Divulgação</h3>
+          <p className="text-gray-600 text-center mb-8">Para quem está com as atividades adaptadas ou intensificadas, provemos divulgação. Abaixo temos uma lista de empresas e profissionais que estão trabalhando em modo delivery ou adaptados. Em breve poderá ser adicionado empresas/profissionais de outras cidades.</p>
+        </div>
+        <div className="flex flex-col items-center pl-8 w-full sm:w-1/2 py-6">
+          <img src={education} width={320} />
+          <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">Educação direta ao ponto</h3>
+          <p className="text-gray-600 text-center mb-8">Para quem está com as atividades adaptadas, provemos materiais educativos de como lidar com a adaptação (atender online, por exemplo). Já quem está com as atividades paradas, o objetivo é aprender novas habilidades que farão a diferença no momento de recuperação.</p>
         </div>
       </div>
     </div>
@@ -78,9 +101,10 @@ const Index = () => {
       <Hero />
       <EndWave />
       <div className='bg-white'>
+        <Callouts />
         <div className='container mx-auto'>
-          <h2 className='py-4 text-4xl font-bold leading-tight'>Empresas e profissionais liberais</h2>
-          <p>Pouso Alegre / MG (em breve mais cidades)</p>
+          <h2 className='py-4 text-4xl text-gray-800 font-bold leading-tight'>Empresas e profissionais liberais</h2>
+          <p className='text-gray-600'>Pouso Alegre / MG (em breve mais cidades)</p>
           { !loading && listings.map( listing => <Card name={listing.name} description={listing.description} contacts={listing.contacts} />) }
           { loading && <p>Aguarde, carregando...</p>}
         </div>
