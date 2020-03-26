@@ -3,6 +3,12 @@ module.exports = {
     'gatsby-plugin-postcss',
     'gatsby-plugin-react-helmet',
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-161608254-1',
+      }
+    },
+    {
       resolve: 'gatsby-source-firestore',
       options: {
         credential: require("./firebase-private.json"),
