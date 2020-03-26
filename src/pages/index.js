@@ -8,11 +8,11 @@ const Hero = () => {
   return(
     <div class="pt-24">
       <Seo title='Vamos ajudar o pequeno empresário a passar por essa turbulência' />
-      <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+      <div class="container mx-auto flex flex-wrap flex-col md:flex-row items-center">
         <div class="flex flex-col w-full md:w-3/5 justify-center items-start text-center md:text-left">
-          <p class="uppercase tracking-loose w-full">Uma iniciativa sem fins-lucrativos</p>
-          <h1 class="my-4 text-5xl font-bold leading-tight">Para ajudar pequenas empresas e profissionais liberais</h1>
-          <p class="leading-normal text-2xl mb-8">a superarem este momento difícil com muito conhecimento e reconhecimento.</p>
+          <p class="uppercase tracking-loose w-full text-white">Uma iniciativa sem fins-lucrativos</p>
+          <h1 class="my-4 text-5xl font-bold leading-tight text-white">Para ajudar pequenas empresas e profissionais liberais</h1>
+          <p class="leading-normal text-2xl mb-8 text-white">a superarem este momento difícil com muito conhecimento e reconhecimento.</p>
         </div>
         <div class="w-full md:w-2/5 py-6 text-center">
           <img class="w-full md:w-4/5 z-50" src={require('../assets/hero.png')} />
@@ -42,7 +42,7 @@ const EndWave = () => {
 
 const Card = ({ name, description, contacts }) => {
   return(
-    <div class="w-full m-4">
+    <div class="w-full mt-4 mb-4">
       <div class="border border-gray-400 bg-white rounded p-4 flex flex-col justify-between leading-normal">
         <div class="mb-4">
           <div class="text-gray-900 font-bold text-xl mb-2">{name}</div>
