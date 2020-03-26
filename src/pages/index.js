@@ -62,6 +62,24 @@ const Card = ({ name, description, contacts }) => {
     </div>
   )
 }
+const Callouts = () => {
+  return(
+    <div className='container mx-auto'>
+      <h3 class="w-full py-2 text-5xl font-bold leading-tight text-center text-gray-800">Como funciona?</h3>
+      <p class="text-gray-600 mb-8">Acreditamos que o pequeno empresário ou profissional liberal pode estar em 3 situações: com atividades totalmente suspensas, atividades adaptadas (trabalhando somente com entregas ou com aulas online) ou trabalhando horas extras por se tratar de um serviço essencial.</p>
+      <div class="flex flex-wrap">
+        <div class="w-5/6 sm:w-1/2 py-6">
+          <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">Divulgação</h3>
+          <p class="text-gray-600 mb-8">Para quem está com as atividades adaptadas ou intensificadas, provemos divulgação. Abaixo temos uma lista de empresas e profissionais que estão trabalhando em modo delivery ou adaptados. Em breve poderá ser adicionado empresas/profissionais de outras cidades.</p>
+        </div>
+        <div class="w-full sm:w-1/2 p-6">
+          <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">Educação direta ao ponto</h3>
+          <p class="text-gray-600 mb-8">Para quem está com as atividades adaptadas, provemos materiais educativos de como lidar com a adaptação (atender online, por exemplo). Já quem está com as atividades paradas, o objetivo é aprender novas habilidades que farão a diferença no momento de recuperação.</p>
+        </div>
+      </div>
+    </div>
+  )
+}
 
 const Index = () => {
   const [listings, setListings] = useState([])
@@ -78,6 +96,7 @@ const Index = () => {
       <Hero />
       <EndWave />
       <div className='bg-white'>
+        <Callouts />
         <div className='container mx-auto'>
           <h2 className='py-4 text-4xl font-bold leading-tight'>Empresas e profissionais liberais</h2>
           <p>Pouso Alegre / MG (em breve mais cidades)</p>
