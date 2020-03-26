@@ -54,10 +54,10 @@ const Menu = () => {
   )
 }
 
-const Layout = ({ children }) => {
+const Layout = ({ children, title='Aprender' }) => {
   return (
     <div className='bg-gray-100'>
-      <Seo title='Aprender' />
+      <Seo title={title} />
       <div className='bg-grey-100'>
         <Header />
       </div>
