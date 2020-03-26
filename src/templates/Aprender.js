@@ -5,8 +5,11 @@ import LayoutAprender from '../components/LayoutAprender'
 
 const Aprender = ({ data }) => {
   return (
-    <LayoutAprender>
+    <LayoutAprender title={data.learningPaths.title}>
     <span className='text-base text-purple-500 font-bold'>&laquo;</span> <Link to='/aprender' className='text-base md:text-sm text-purple-500 font-bold no-underline hover:underline'>Voltar</Link>
+    
+    <h1 className='font-sans break-normal text-gray-900 pt-6 pb-2 text-xl font-bold'>{data.learningPaths.title}</h1>
+    
       {
         data.allLessons.edges.map(node => {
           return (
@@ -29,6 +32,10 @@ const Aprender = ({ data }) => {
 }
 export const pageQuery = graphql`
   query ($slug: String!) {
+    learningPaths(slug: {eq: $slug}) {
+      title
+      slug
+    }
     allLessons(filter: {learningPath: {eq: $slug }}, sort: {fields: position, order: ASC}) {
       edges {
         node {
