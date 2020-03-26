@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'gatsby'
 const Footer = () => {
   return(
     <footer class="bg-white border-t border-gray-400 shadow">
@@ -23,6 +23,11 @@ const Footer = () => {
                     </li>
                     <li>
                         <a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:underline py-1" href="https://github.com/id49/vaidarcerto.org">Contribua: github.com/id49/vaidarcerto.org</a>
+                    </li>
+                  </ul>
+                  <ul class="list-reset items-center text-sm pt-3">
+                    <li>
+                        <Link to='/politica-de-privacidade' className='inline-block text-gray-600 no-underline hover:text-gray-900 hover:underline py-1'>Política de Privacidade</Link>
                     </li>
                   </ul>
               </div>
