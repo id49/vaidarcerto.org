@@ -89,6 +89,7 @@ const Callouts = () => {
 const Index = () => {
   const [listings, setListings] = useState([])
   const [loading, setLoading] = useState(true)
+  
   useEffect(() => {
     firebase.firestore().collection('listings').get().then(snap => {
       const listings = snap.docs.map(doc => doc.data())
@@ -96,11 +97,27 @@ const Index = () => {
       setLoading(false)
     })
   }, [])
+
+  const auth = () => {
+    const provider = new firebase.auth.FacebookAuthProvider();
+
+    firebase.auth().signInWithPopup(provider).then(function(result) {
+      const token = result.credential.accessToken;
+      const user = result.user;
+    }).catch(function(error) {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      const email = error.email;
+      const credential = error.credential;
+    });
+
+  }
   return (
     <Layout home>
       <Hero />
       <EndWave />
       <div className='bg-white'>
+        <button type="button" onClick={auth}>Facebook</button>
         <Callouts />
         <div className='container mx-auto'>
           <h2 className='py-4 text-4xl text-gray-800 font-bold leading-tight'>Empresas e profissionais liberais</h2>
