@@ -4,6 +4,7 @@ import './styles.css'
 import { useStaticQuery, graphql, Link } from 'gatsby'
 import Footer from '../Footer'
 import Seo from '../Seo'
+import { AuthProvider } from '../../lib/AuthContext'
 
 const QUERY_LEARNING_PATHS = graphql`
   query {
@@ -56,19 +57,21 @@ const Menu = () => {
 
 const Layout = ({ children, title='Aprender' }) => {
   return (
-    <div className='bg-gray-100'>
-      <Seo title={title} />
-      <div className='bg-grey-100'>
-        <Header />
-      </div>
-      <div className='container w-full flex flex-wrap mx-auto px-2 pt-8 pb-8 lg:pt-16 mt-16'>
-        <Menu />
-        <div className='w-full lg:w-4/5 p-8 mt-6 lg:mt-0 text-gray-900 leading-normal bg-white border border-gray-400 border-rounded'>
-          {children}
+    <AuthProvider>
+      <div className='bg-gray-100'>
+        <Seo title={title} />
+        <div className='bg-grey-100'>
+          <Header />
         </div>
+        <div className='container w-full flex flex-wrap mx-auto px-2 pt-8 pb-8 lg:pt-16 mt-16'>
+          <Menu />
+          <div className='w-full lg:w-4/5 p-8 mt-6 lg:mt-0 text-gray-900 leading-normal bg-white border border-gray-400 border-rounded'>
+            {children}
+          </div>
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </AuthProvider>
   )
 }
 export default Layout
