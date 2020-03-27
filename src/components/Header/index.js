@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import { Link } from 'gatsby'
+import { useAuth } from '../../lib/AuthContext'
 
 const Header = ({ home = false }) => {
+  const auth = useAuth()
   const [showMenu, setShowMenu] = useState('hidden')
   const toggleMenu = () => {
     setShowMenu( oldValue => oldValue === 'hidden' ? '' : 'hidden')
@@ -33,6 +35,10 @@ const Header = ({ home = false }) => {
             </li>
             <li className='mr-3'>
               <Link to='/aprender' activeClassName='font-bold' className='inline-block py-2 px-4 text-black no-underline'>Aprender</Link>
+            </li>
+            <li className='mr-3'>
+              { !auth.isAuth && <button onClick={auth.authFB} className='bg-blue-800 text-white inline-block py-2 px-4 text-black no-underline'>Entrar com Facebook</button> }
+              { auth.isAuth && <span className='inline-block py-2 px-4 text-black no-underline'>{auth.name}</span> }
             </li>
             {/*
               <li className='mr-3'>
