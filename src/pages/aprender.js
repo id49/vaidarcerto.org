@@ -1,7 +1,7 @@
 import React from 'react'
 import LayoutAprender from '../components/LayoutAprender'
-import { useStaticQuery, graphql, Link } from 'gatsby'
 
+/*
 const QUERY_LEARNING_PATHS = graphql`
   query {
     allLearningPaths {
@@ -14,9 +14,10 @@ const QUERY_LEARNING_PATHS = graphql`
     }
   }
 `
+*/
 
 const Aprender = () => {
-  const { allLearningPaths } = useStaticQuery(QUERY_LEARNING_PATHS)
+  // const { allLearningPaths } = useStaticQuery(QUERY_LEARNING_PATHS)
   // return <pre>{JSON.stringify(allLearningPaths)}</pre>
   return(
     <LayoutAprender>
@@ -27,7 +28,7 @@ const Aprender = () => {
        </div>
 
        <p className='py-6'>
-          👋 Seja bem-vindo a seção Aprender. O objetivo é explorar novos conhecimentos para enfrentar os desafios deste momento turbulento. Explore as trilhas de aprendizado ao lado.
+          <span role='img' aria-label=''>👋</span> Seja bem-vindo a seção Aprender. O objetivo é explorar novos conhecimentos para enfrentar os desafios deste momento turbulento. Explore as trilhas de aprendizado ao lado.
        </p>
        <p>Envie sugestões de novas trilhas e caso queira contribuir para: tuliofaria@id49.digital</p>
        {/*

@@ -2,16 +2,17 @@ import React from 'react'
 import Header from '../Header'
 import './styles.css'
 import Footer from '../Footer'
+import { AuthProvider } from '../../lib/AuthContext'
 
 const Layout = ({ children, home }) => {
   return (
-    <React.Fragment>
+    <AuthProvider>
       <div className='gradient'>
         <Header home={home} />
         {children}
       </div>
       <Footer />
-    </React.Fragment>
+    </AuthProvider>
   )
 }
 export default Layout
