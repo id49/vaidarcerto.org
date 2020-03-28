@@ -13,7 +13,6 @@ const errorCodes = {
 
 const NovaConta = () => {
   const auth = useAuth()
-  console.log(auth)
   const [form, setForm] = useState({
     email: '',
     passwd: '',

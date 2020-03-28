@@ -13,7 +13,6 @@ const errorCodes = {
 
 const Entrar = () => {
   const auth = useAuth()
-  console.log(auth)
   const [form, setForm] = useState({
     email: '',
     passwd: '',
@@ -32,17 +31,7 @@ const Entrar = () => {
   }
   const createAccount = () => {
     setError('')
-    if (form.passwd.length >=6 && form.passwd === form.passwd2) {
-      firebase
-        .auth()
-        .createUserWithEmailAndPassword(form.email, form.passwd)
-        .then(() => {
-          navigateTo('/restrito')
-        })
-        .catch(function(error) {
-          setError(error.code)
-        })
-    }
+    auth.signIn(form.email, form.passwd)
   }
 
   let classError = ''
@@ -97,7 +86,7 @@ const Entrar = () => {
                     </div>
                     <div className="flex justify-start mt-3 ml-4 p-1">
                       <ul>
-                        { error &&
+                        { auth.error &&
                           <li className="flex items-center py-1">
                             <div
                               className={'rounded-full p-1 fill-current bg-red-200 text-red-700 mr-2'}
@@ -119,7 +108,7 @@ const Entrar = () => {
                             <span
                               className={classError}
                             >
-                              { !!errorCodes[error] ? errorCodes[error] : 'Alguma coisa deu errado... Tente novamente em alguns minutos.' }
+                              E-mail ou senha inválidos.
                             </span>
                           </li>
                         }
