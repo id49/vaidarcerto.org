@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@n8tb1t/use-scroll-position": "^1.0.43",
     "firebase": "^7.6.0",
     "gatsby": "^2.20.2",
     "gatsby-plugin-favicon": "^3.1.6",
