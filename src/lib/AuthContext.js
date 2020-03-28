@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useEffect, useState } from 'react'
 import firebase from '../components/firebase'
-
+import { navigateTo } from 'gatsby'
 export const AuthContext = createContext()
 export const useAuth = () => {
   const value = useContext(AuthContext)
@@ -15,11 +15,22 @@ export const AuthProvider = ({ children }) => {
         if (user) {
           setAuth({
             isAuth: true,
-            name: user.displayName
+            name: user.displayName || user.email
           })
         }
       })
   }, [])
+  const signOut = () => {
+    firebase
+      .auth()
+      .signOut()
+      .then(function() {
+        navigateTo('/')
+      })
+      .catch(function(error) {
+        navigateTo('/')
+      })
+  }
   const authFB = () => {
     const provider = new firebase.auth.FacebookAuthProvider()
     firebase
@@ -38,9 +49,9 @@ export const AuthProvider = ({ children }) => {
         */
       })
 
-  }
+    }
   return (
-    <AuthContext.Provider value={{...auth, authFB }}>
+    <AuthContext.Provider value={{...auth, authFB, signOut }}>
       {children}
     </AuthContext.Provider>
   )
