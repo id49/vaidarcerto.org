@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useEffect, useState } from 'react'
 import firebase from '../components/firebase'
-
+import { navigateTo } from 'gatsby'
 export const AuthContext = createContext()
 export const useAuth = () => {
   const value = useContext(AuthContext)
@@ -8,6 +8,7 @@ export const useAuth = () => {
 }
 export const AuthProvider = ({ children }) => {
   const [auth, setAuth] = useState({ isAuth: false, name: '' })
+  const [error, setError] = useState('')
   useEffect(() => {
     firebase
       .auth()
@@ -15,11 +16,41 @@ export const AuthProvider = ({ children }) => {
         if (user) {
           setAuth({
             isAuth: true,
-            name: user.displayName
+            name: user.displayName || user.email
+          })
+        }else{
+          setAuth({
+            isAuth: false,
+            name: ''
           })
         }
       })
   }, [])
+  const signOut = async() => {
+    try{
+      await firebase
+        .auth()
+        .signOut()
+      setAuth({
+        isAuth: false,
+        name: ''
+      })
+      navigateTo('/')
+    }catch(err){
+      navigateTo('/')
+    }
+  }
+  const signIn = (email, passwd) => {
+    firebase
+      .auth()
+      .signInWithEmailAndPassword(email, passwd)
+      .then(() => {
+        navigateTo('/restrito')
+      })
+      .catch(function(error) {
+        setError(error.code)
+      })
+  }
   const authFB = () => {
     const provider = new firebase.auth.FacebookAuthProvider()
     firebase
@@ -38,9 +69,9 @@ export const AuthProvider = ({ children }) => {
         */
       })
 
-  }
+    }
   return (
-    <AuthContext.Provider value={{...auth, authFB }}>
+    <AuthContext.Provider value={{...auth, authFB, signOut, signIn, error }}>
       {children}
     </AuthContext.Provider>
   )

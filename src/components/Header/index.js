@@ -42,8 +42,18 @@ const Header = ({ home }) => {
               <Link to='/aprender' activeClassName='font-bold' className='inline-block py-2 px-4 text-black no-underline'>Aprender</Link>
             </li>
             <li className='mr-3'>
-              {!auth.isAuth && <button onClick={auth.authFB} className='bg-blue-800 text-white inline-block py-2 px-4 text-black no-underline'>Entrar com Facebook</button>}
-              {auth.isAuth && <span className='inline-block py-2 px-4 text-black no-underline'>{auth.name}</span>}
+              { !auth.isAuth && 
+                  <React.Fragment>
+                    <Link to='/nova-conta' className='bg-blue-800 text-white inline-block py-2 px-4 no-underline'>Criar conta</Link>
+                    <Link to='/entrar' className='inline-block py-2 px-4 no-underline'>Entrar</Link>
+                  </React.Fragment>
+              }
+              { auth.isAuth && 
+                <span>
+                  <span className='inline-block py-2 px-4 text-black no-underline'>{auth.name}</span>
+                  |<button onClick={auth.signOut} className='inline-block py-2 px-4 text-black no-underline hover:underline'>Sair</button>
+                </span>
+              }
             </li>
             {/*
               <li className='mr-3'>
