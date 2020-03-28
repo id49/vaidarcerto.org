@@ -20,7 +20,8 @@
     "gatsby-source-firestore": "^1.0.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "react-select": "^3.1.0"
   },
   "devDependencies": {
     "firebase-tools": "^7.16.1",
