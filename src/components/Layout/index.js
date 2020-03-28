@@ -5,11 +5,15 @@ import Footer from '../Footer'
 import { AuthProvider } from '../../lib/AuthContext'
 
 const Layout = ({ children, home }) => {
+  const wrapper = home ? 'gradient' : 'pt-12 '
+  const center = home ? '' : 'container mx-auto pt-12 '
   return (
     <AuthProvider>
-      <div className='gradient'>
+      <div className={wrapper}>
         <Header home={home} />
-        {children}
+        <div className={center}>
+          {children}
+        </div>
       </div>
       <Footer />
     </AuthProvider>
