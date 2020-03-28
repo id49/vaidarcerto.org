@@ -3,20 +3,20 @@ import { Link } from 'gatsby'
 import { useScrollPosition } from '@n8tb1t/use-scroll-position'
 import { useAuth } from '../../lib/AuthContext'
 
-const Header = () => {
+const Header = ({ home }) => {
   const auth = useAuth()
   const [showMenu, setShowMenu] = useState('hidden')
-  const [menuClass, setMenuClass] = useState('text-white')
+  const [headerClass, setHeaderClass] = useState(home ? 'text-white' : '')
   const toggleMenu = () => {
     setShowMenu(oldValue => oldValue === 'hidden' ? '' : 'hidden')
   }
 
   useScrollPosition(({ prevPos, currPos }) => {
-    setMenuClass(currPos.y === 0 ? 'text-white' : 'bg-white shadow')
+    setHeaderClass(currPos.y !== 0 ? 'bg-white shadow' : '')
   })
 
   return (
-    <nav id='header' className={'fixed w-full z-30 top-0 ' + menuClass}>
+    <nav id='header' className={'fixed w-full z-30 top-0 ' + headerClass}>
       <div className='w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2'>
         <div className='flex items-center'>
           <Link to='/' className='toggleColour no-underline hover:no-underline font-bold text-2xl lg:text-4xl'>
