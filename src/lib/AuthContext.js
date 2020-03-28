@@ -8,6 +8,7 @@ export const useAuth = () => {
 }
 export const AuthProvider = ({ children }) => {
   const [auth, setAuth] = useState({ isAuth: false, name: '' })
+  const [error, setError] = useState('')
   useEffect(() => {
     firebase
       .auth()
@@ -17,18 +18,37 @@ export const AuthProvider = ({ children }) => {
             isAuth: true,
             name: user.displayName || user.email
           })
+        }else{
+          setAuth({
+            isAuth: false,
+            name: ''
+          })
         }
       })
   }, [])
-  const signOut = () => {
+  const signOut = async() => {
+    try{
+      await firebase
+        .auth()
+        .signOut()
+      setAuth({
+        isAuth: false,
+        name: ''
+      })
+      navigateTo('/')
+    }catch(err){
+      navigateTo('/')
+    }
+  }
+  const signIn = (email, passwd) => {
     firebase
       .auth()
-      .signOut()
-      .then(function() {
-        navigateTo('/')
+      .signInWithEmailAndPassword(email, passwd)
+      .then(() => {
+        navigateTo('/restrito')
       })
       .catch(function(error) {
-        navigateTo('/')
+        setError(error.code)
       })
   }
   const authFB = () => {
@@ -51,7 +71,7 @@ export const AuthProvider = ({ children }) => {
 
     }
   return (
-    <AuthContext.Provider value={{...auth, authFB, signOut }}>
+    <AuthContext.Provider value={{...auth, authFB, signOut, signIn, error }}>
       {children}
     </AuthContext.Provider>
   )
