@@ -16,12 +16,15 @@ export const AuthProvider = ({ children }) => {
         if (user) {
           setAuth({
             isAuth: true,
-            name: user.displayName || user.email
+            name: user.displayName || user.email,
+            emailVerified: user.emailVerified,
+            email: user.email
           })
         }else{
           setAuth({
             isAuth: false,
-            name: ''
+            name: '',
+            emailVerified: false
           })
         }
       })
@@ -33,7 +36,8 @@ export const AuthProvider = ({ children }) => {
         .signOut()
       setAuth({
         isAuth: false,
-        name: ''
+        name: '',
+        emailVerified: false
       })
       navigateTo('/')
     }catch(err){
@@ -70,8 +74,13 @@ export const AuthProvider = ({ children }) => {
       })
 
     }
+  const sendEmailConfirmation = async() => {
+    const user = firebase.auth().currentUser
+    await user.sendEmailVerification()
+    return true
+  }
   return (
-    <AuthContext.Provider value={{...auth, authFB, signOut, signIn, error }}>
+    <AuthContext.Provider value={{...auth, authFB, signOut, signIn, error, sendEmailConfirmation }}>
       {children}
     </AuthContext.Provider>
   )
