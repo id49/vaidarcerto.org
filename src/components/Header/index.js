@@ -45,7 +45,7 @@ const Header = ({ home = false }) => {
               }
               { auth.isAuth && 
                 <span>
-                  <span className='inline-block py-2 px-4 text-black no-underline'>{auth.name}</span>
+                  <Link to='/restrito' className='hover:underline inline-block py-2 px-4 text-black no-underline'>{auth.name}</Link>
                   |<button onClick={auth.signOut} className='inline-block py-2 px-4 text-black no-underline hover:underline'>Sair</button>
                 </span>
               }
