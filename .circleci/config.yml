@@ -33,13 +33,14 @@ jobs:
           command: ./node_modules/.bin/firebase deploy --token "$FIREBASE_TOKEN"
 workflows:
   version: 2
-  updates:
+  build_every15:
+    jobs:
+      - build
     triggers:
       - schedule:
-        cron: "*/15 * * * *"
+        cron: "0 * * * *"
         filters:
           branches:
             only:
               - master
-    jobs:
-      - build
+    
