@@ -3,6 +3,7 @@ import firebase from '../../components/firebase'
 import Select from 'react-select'
 import { navigateTo } from 'gatsby'
 import states from '../../lib/states.json'
+import { useAuth } from '../../lib/AuthContext'
 
 const STATES = states.sort((a, b) => a.state > b.state ? 1 : -1).map(state => {
   return {
@@ -14,6 +15,7 @@ const STATES = states.sort((a, b) => a.state > b.state ? 1 : -1).map(state => {
 const SelectCity = ({ state }, ...props) => {
   const selected = STATES.find(s => s.value === state)
   const [cities, setCities] = useState([])
+ 
   useEffect(() => {
     if(selected){
       firebase
