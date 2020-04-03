@@ -3,6 +3,7 @@ import Layout from '../../components/Layout'
 import firebase from '../../components/firebase'
 import { useAuth, AuthProvider } from '../../lib/AuthContext'
 import { Link, navigateTo } from 'gatsby'
+import InputPhone from '../../components/InputPhone'
 
 const errorCodes = {
   'auth/email-already-in-use': 'Este e-mail já está em uso na plataforma.',
@@ -19,6 +20,9 @@ const CreateListings = () => {
     passwd2: ''
   })
   const [error, setError] = useState('')
+  const [contacts, setContacts] = useState({
+
+  })
 
   const onChange = evt => {
     const value = evt.target.value
@@ -29,9 +33,28 @@ const CreateListings = () => {
     }))
     setError('')
   }
+  const onChangeContact = evt => {
+    const value = evt.target.value
+    const field = evt.target.name
+    setContacts(oldForm => ({
+      ...oldForm,
+      [field]: value
+    }))
+    setError('')
+  }
   const createAccount = () => {
     setError('')
     auth.signIn(form.email, form.passwd)
+  }
+
+  const addContact = type => {
+    setContacts(old => {
+      const total = Object.keys(old).length
+      return {
+        ...old,
+        [type+total]: '35999516658'
+      }
+    })
   }
 
   let classError = ''
@@ -47,6 +70,8 @@ const CreateListings = () => {
   return(
     
       <div className="container max-w-full mx-auto md:py-14 px-6 mb-12">
+        <pre>{JSON.stringify(contacts, null, 2)}</pre>
+
         <div className="max-w-lg mx-auto px-6">
           <div className="relative flex flex-wrap">
             <div className="w-full relative">
@@ -64,18 +89,26 @@ const CreateListings = () => {
                         className="text-md block px-3 py-2 rounded-lg w-full bg-white border-2 border-gray-300 placeholder-gray-600 shadow-md focus:placeholder-gray-500 focus:bg-white focus:border-gray-600 focus:outline-none"
                       />
                     </div>
+
                     <div className="py-1">
-                      <span className="px-1 text-sm text-gray-600">Contato</span>
-                      <input
-                        placeholder=""
-                        value={form.passwd}
-                        onChange={onChange}
-                        name='passwd'
-                        type="password"
-                        x-model="password"
-                        className="text-md block px-3 py-2 rounded-lg w-full bg-white border-2 border-gray-300 placeholder-gray-600 shadow-md focus:placeholder-gray-500 focus:bg-white focus:border-gray-600 focus:outline-none"
-                      />
+                      <button onClick={() => addContact('whatsapp')} type='button'>Adicionar contato</button>
                     </div>
+
+                    {Object.keys(contacts).map(key => {
+                      return (
+                        <div className="py-1">
+                          <span className="px-1 text-sm text-gray-600">Contato <button>remover</button></span>
+                            <InputPhone
+                              name={key}
+                              key={key}
+                              value={contacts[key]}
+                              onChange={onChangeContact}
+                              className="text-md block px-3 py-2 rounded-lg w-full bg-white border-2 border-gray-300 placeholder-gray-600 shadow-md focus:placeholder-gray-500 focus:bg-white focus:border-gray-600 focus:outline-none"
+                            />
+                        </div>
+                      )
+                    })}
+
                     <div className="py-1">
                       <span className="px-1 text-sm text-gray-600">Descrição</span>
                       <textarea
