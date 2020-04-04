@@ -6,7 +6,7 @@ const Seo = ({ title = '', description, ogImage='/og-fb.jpg', ogTitle ='Vamos aj
     <Helmet title={title + ' | VaiDarCerto.org'}>
       { description && <meta name='description' content={description} />}
       <meta property='og:image' content={ogImage} />
-      <meta property='og:title' content={ogTitle} />
+      <meta property='og:title' content={title} />
       <meta property='og:description' content={ogDescription} />
     </Helmet>
   )
