@@ -2,6 +2,8 @@
 
 O projeto foi construído utilizando uma stack baseada em Javascript, com Gatsby + ReactJS e armazenando os dados no Firebase Firestore. A hospedagem dos assets estáticos e cloud-functions também ficaram no Firebase Hosting + Functions.
 
+Algumas seções do site são geradas estaticamente, como a seção Aprender (e futuramente a de empresas). Por isso, as atualizações entram no ar a cada período de tempo pois exigem um novo build do site.
+
 ## Configuração inicial
 
 Para rodar o projeto localmente, é necessário criar alguns arquivos de configuração para a ligação com o Firebase, bem como criar algumas estrutuas iniciais no Firestore. Recomendamos criar um novo projeto no Firebase para testes.
@@ -43,4 +45,42 @@ Caso você não tenha o gatsby-cli instalado, instale-o por meio da instrução:
 
 ```
 npm install -g gatsby-cli
+```
+
+# Estrutura de Dados no Firestore
+
+## Collection: `learningpaths`
+
+Armazena as trilhas de aprendizado da seção Aprender.
+
+### Caminho no Firestore: 
+```
+/learningpaths/{id-learning-path}/
+```
+
+### Estrutura:
+
+```
+slug: url-identificador da trilha de aprendizado.
+title: nome da trilha de aprendizado
+```
+
+## Collection: `lessons`
+
+Armazena as lições de cada trilha de aprendizado da seção Aprender.
+
+### Caminho no Firestore: 
+
+```
+/lessons/{id-lesson}/
+```
+
+### Estrutura:
+
+```
+title: título da lição
+position (number): posição da lição dentro da trilha de aprendizado
+video_url: url de embed do youtube (ex: https://www.youtube.com/embed/2P62JuxA4cA)
+description: descrição da lição.
+learningpath: slug do learningpath que esta lição pertence.
 ```
