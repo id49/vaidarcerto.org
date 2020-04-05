@@ -11,7 +11,6 @@ export const useAuth = () => {
 export const AuthProvider = ({ children }) => {
   const [auth, setAuth] = useState({ isAuth: false, name: '', isAuthReady: false, role: 'user' })
   const [error, setError] = useState('')
-  const db = firebase.firestore()
   useEffect(() => {
     const unsubscribe = firebase
       .auth()
@@ -21,13 +20,16 @@ export const AuthProvider = ({ children }) => {
             isAuth: true,
             name: user.displayName || user.email,
             isAuthReady: true,
-            uid: user.uid
+            uid: user.uid,
+            emailVerified: user.emailVerified,
+            email: user.email
           })
         }else{
           setAuth({
             isAuth: false,
             name: '',
-            isAuthReady: true
+            isAuthReady: true,
+            emailVerified: false
           })
         }
       })
@@ -39,6 +41,7 @@ export const AuthProvider = ({ children }) => {
     // checking user role
     let unsubscribe = null
     if(auth.uid){
+      const db = firebase.firestore()
       unsubscribe = db
         .collection('users')
         .doc(auth.uid)
@@ -67,7 +70,8 @@ export const AuthProvider = ({ children }) => {
         .signOut()
       setAuth({
         isAuth: false,
-        name: ''
+        name: '',
+        emailVerified: false
       })
       navigateTo('/')
     }catch(err){
@@ -104,8 +108,13 @@ export const AuthProvider = ({ children }) => {
       })
 
     }
+  const sendEmailConfirmation = async() => {
+    const user = firebase.auth().currentUser
+    await user.sendEmailVerification()
+    return true
+  }
   return (
-    <AuthContext.Provider value={{...auth, authFB, signOut, signIn, error }}>
+    <AuthContext.Provider value={{...auth, authFB, signOut, signIn, error, sendEmailConfirmation }}>
       {children}
     </AuthContext.Provider>
   )
