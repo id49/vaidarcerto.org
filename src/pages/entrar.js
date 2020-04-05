@@ -1,15 +1,7 @@
 import React, { useState } from 'react'
 import Layout from '../components/Layout'
-import firebase from '../components/firebase'
 import { useAuth, AuthProvider } from '../lib/AuthContext'
-import { Link, navigateTo } from 'gatsby'
-
-const errorCodes = {
-  'auth/email-already-in-use': 'Este e-mail já está em uso na plataforma.',
-  'auth/invalid-email': 'E-mail inválido.',
-  'auth/operation-not-allowed': 'Algo deu errado, tente novamente em alguns minutos.',
-  'auth/weak-password': 'Por favor, informe uma senha um pouco mais forte.'
-}
+import { Link } from 'gatsby'
 
 const Entrar = () => {
   const auth = useAuth()
@@ -29,24 +21,17 @@ const Entrar = () => {
     }))
     setError('')
   }
-  const createAccount = () => {
+  const signIn = () => {
     setError('')
     auth.signIn(form.email, form.passwd)
   }
 
   let classError = ''
-  let classIcon = ' rounded-full p-1 fill-current mr-2 '
-  if(form.passwd === form.passwd2 && form.passwd.length >= 6){
-    classError +=  ' text-green-700 '
-    classIcon += ' bg-green-200 text-green-700 '
-  }
-  if(form.passwd !== form.passwd2 || form.passwd.length < 6){
+  if(error){
     classError += ' text-red-700 '
-    classIcon += ' bg-red-200 text-red-700 '
   }
   return(
     <Layout>
-      
       <div className="container max-w-full mx-auto md:py-14 px-6 mb-12">
         <div className="max-w-sm mx-auto px-6">
           <div className="relative flex flex-wrap">
@@ -98,9 +83,9 @@ const Entrar = () => {
                                 stroke="currentColor"
                               >
                               <path
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  stroke-width="2"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  strokeWidth="2"
                                   d="M6 18L18 6M6 6l12 12"
                                 />
                               </svg>
@@ -114,7 +99,7 @@ const Entrar = () => {
                         }
                       </ul>
                     </div>
-                    <button type='button' onClick={createAccount} className="mt-3 text-lg font-semibold bg-gray-800 w-full text-white rounded-lg px-6 py-3 block shadow-xl hover:text-white hover:bg-black">
+                    <button type='button' onClick={signIn} className="mt-3 text-lg font-semibold bg-gray-800 w-full text-white rounded-lg px-6 py-3 block shadow-xl hover:text-white hover:bg-black">
                       Entrar
                     </button>
                   </div>

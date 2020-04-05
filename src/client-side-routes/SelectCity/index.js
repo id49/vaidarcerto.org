@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Select from 'react-select'
 import AsyncSelect from 'react-select/async'
 import { navigateTo } from 'gatsby'
 import states from '../../lib/states.json'
 import axios from 'axios'
+import settings from '../../lib/settings'
 
 const STATES = states.sort((a, b) => a.state > b.state ? 1 : -1).map(state => {
   return {
@@ -19,7 +20,7 @@ const SelectCity = ({ state }, ...props) => {
       return callback([])
     }
     axios
-    .get('http://localhost:5001/vaidarcerto-org/us-central1/api/city/'+state+'?str='+input)
+    .get(settings.functionsBaseURL + 'api/city/'+state+'?str='+input)
     .then(res => {
       callback(res.data)
     })
@@ -33,8 +34,8 @@ const SelectCity = ({ state }, ...props) => {
 
   return (
     <div className='m-12'>
-      <h2 className='font-bold'>Selecionar cidade</h2>
-      <Select options={STATES} defaultValue={selected} value={selected} onChange={goToState} placeholder='Selecionar estado...' />
+      <h2 className='font-bold mb-2'>Selecionar cidade</h2>
+      <Select className='mb-2' options={STATES} defaultValue={selected} value={selected} onChange={goToState} placeholder='Selecionar estado...' />
       { selected && <AsyncSelect loadOptions={loadOptions} onChange={goToCity} placeholder='Selecionar cidade' /> }
     </div>
   )
