@@ -49,7 +49,8 @@ const newCities = data.cities
                         state: states[city.state_id]
                       }
                     })
-
+const fs = require('fs')
+                    fs.writeFileSync('cities.json', JSON.stringify(newCities))
 // firebase only allow batches of 500 writes per commit
 const cityBatches = []
 while(newCities.length > 0){

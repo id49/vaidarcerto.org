@@ -1,11 +1,13 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 import Layout from '../components/Layout'
 import Seo from '../components/Seo'
-import Phone from '../components/Phone'
-import firebase from '../components/firebase'
+import CardCity from '../components/CardCity'
 
 import marketing from '../assets/undraw_mobile_marketing_iqbr.png'
 import education from '../assets/undraw_Graduation_ktn0.png'
+
+import { useStaticQuery, graphql } from 'gatsby'
+import { findCityByStr } from '../lib/city'
 
 const Hero = () => {
   return(
@@ -18,7 +20,7 @@ const Hero = () => {
           <p className="leading-normal text-2xl mb-8 text-white">a superarem este momento difícil com muito conhecimento e reconhecimento.</p>
         </div>
         <div className="w-full md:w-2/5 py-6 text-center">
-          <img className="w-full md:w-4/5 z-50" src={require('../assets/hero.png')} />
+          <img className="w-full md:w-4/5 z-50" src={require('../assets/hero.png')} alt='' />
         </div>
       </div>
     </div>
@@ -43,28 +45,6 @@ const EndWave = () => {
   )
 }
 
-const Card = ({ id, name, description, contacts }) => {
-  return(
-    <div key={id} className="w-full mt-4 mb-4">
-      <div className="border border-gray-400 bg-white rounded p-4 flex flex-col justify-between leading-normal">
-        <div className="mb-4">
-          <div className="text-gray-800 font-bold text-xl mb-2">{name}</div>
-          <p className="text-gray-700 text-base">{description}</p>
-        </div>
-        <div className="flex items-center">
-          {Object.keys(contacts).map(key => {
-            if(key.indexOf('whatsapp') >=0){
-              return <a key={key} title='Enviar mensagem no Whatsapp.' className='pr-4 hover:underline' target='_blank' href={'https://api.whatsapp.com/send?phone=+55'+contacts[key]+'&text=Vi seu telefone no VaiDarCerto.org. Gostaria de comprar de voce.'}>Whatsapp: <Phone number={contacts[key]} /></a>
-            }
-            if(key.indexOf('instagram') >=0){
-              return <a key={key} title='Acessar perfil no instagram.' className='pr-4 hover:underline' target='_blank' href={'https://instagram.com/'+contacts[key]}>@{contacts[key]}</a>
-            }
-          })}
-        </div>
-      </div>
-    </div>
-  )
-}
 const Callouts = () => {
   return(
     <div className='container mx-auto'>
@@ -72,12 +52,12 @@ const Callouts = () => {
       {/* <p className="text-gray-600 mb-8">Acreditamos que o pequeno empresário ou profissional liberal pode estar em 3 situações: com atividades totalmente suspensas, atividades adaptadas (trabalhando somente com entregas ou com aulas online) ou trabalhando horas extras por se tratar de um serviço essencial.</p> */}
       <div className="flex flex-wrap">
         <div className="flex flex-col items-center pr-8 w-5/6 sm:w-1/2 py-6">
-          <img src={marketing} width={320} />
+          <img src={marketing} width={320} alt='' />
           <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">Divulgação</h3>
           <p className="text-gray-600 text-center mb-8">Para quem está com as atividades adaptadas ou intensificadas, provemos divulgação. Abaixo temos uma lista de empresas e profissionais que estão trabalhando em modo delivery ou adaptados. Em breve poderá ser adicionado empresas/profissionais de outras cidades.</p>
         </div>
         <div className="flex flex-col items-center pl-8 w-full sm:w-1/2 py-6">
-          <img src={education} width={320} />
+          <img src={education} width={320} alt='' />
           <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">Educação direta ao ponto</h3>
           <p className="text-gray-600 text-center mb-8">Para quem está com as atividades adaptadas, provemos materiais educativos de como lidar com a adaptação (atender online, por exemplo). Já quem está com as atividades paradas, o objetivo é aprender novas habilidades que farão a diferença no momento de recuperação.</p>
         </div>
@@ -86,33 +66,36 @@ const Callouts = () => {
   )
 }
 
-const Index = () => {
-  const [listings, setListings] = useState([])
-  const [loading, setLoading] = useState(true)
-  
-  useEffect(() => {
-    firebase.firestore().collection('listings').get().then(snap => {
-      const listings = snap.docs.map(doc => {
-        return { ...doc.data(), id: doc.id }
-      })
-      setListings(listings)
-      setLoading(false)
-    })
-  }, [])
+const QUERY_CITIES = graphql`
+  query {
+    cities: allListings(filter: {status: { eq: "published" }}) {
+      group(field: statecity) {
+        totalCount
+      }
+      distinct(field: statecity)
+    }
+  }
+`
 
+const Index = () => {
+  const cities = useStaticQuery(QUERY_CITIES)
   return (
     <Layout home>
       <Hero />
       <EndWave />
       <div className='bg-white'>
         <Callouts />
-        <div className='container mx-auto'>
+        <div className='container mx-auto mb-32'>
           <h2 className='py-4 text-4xl text-gray-800 font-bold leading-tight'>Empresas e profissionais liberais</h2>
-          <p className='text-gray-600'>Pouso Alegre / MG (em breve mais cidades)</p>
-          <div>
-            { !loading && listings.map( (listing, index) => <Card key={index.toString()} name={listing.name} description={listing.description} contacts={listing.contacts} />) }
-          </div>
-          { loading && <p>Aguarde, carregando...</p>}
+          {
+            cities
+              .cities
+              .distinct
+              .map(findCityByStr)
+              .map(city => {
+                return <CardCity  key={city.state+city.slug} city={city} />
+              })
+          }
         </div>
       </div>
     </Layout>

@@ -1,0 +1,20 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+  
+    function isAdmin(){
+    	return get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == "admin";
+    }
+    function isReviewer(){
+    	return get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == "reviewer";
+    }
+ 
+    match /{document=**} {
+      allow read;
+    }
+    
+    match /listings/{listingId} {
+    	allow read, create: if isAdmin() || (request.auth != null && request.resource.data.status == "pending");
+    }
+  }
+}

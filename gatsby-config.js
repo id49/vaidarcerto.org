@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 module.exports = {
   plugins:[
     'gatsby-plugin-postcss',
@@ -31,6 +33,19 @@ module.exports = {
               videoUrl: doc.video_url,
               learningPath: doc.learningpath,
               position: doc.position
+            }),
+          },
+          {
+            type: 'Listings',
+            collection: 'listings-new',
+            map: doc => ({
+              name: doc.name,
+              state: doc.state,
+              description: doc.description,
+              city: doc.city,
+              statecity: doc.state + '/' + doc.city,
+              contacts: doc.contacts,
+              status: doc.status
             }),
           }
           /*,

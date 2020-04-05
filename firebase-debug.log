@@ -1,0 +1,1639 @@
+[debug] [2020-04-04T18:15:14.742Z] ----------------------------------------------------------------------
+[debug] [2020-04-04T18:15:14.744Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\tulio\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2020-04-04T18:15:14.745Z] CLI Version:   7.15.1
+[debug] [2020-04-04T18:15:14.745Z] Platform:      win32
+[debug] [2020-04-04T18:15:14.745Z] Node Version:  v12.10.0
+[debug] [2020-04-04T18:15:14.745Z] Time:          Sat Apr 04 2020 15:15:14 GMT-0300 (Brasilia Standard Time)
+[debug] [2020-04-04T18:15:14.745Z] ----------------------------------------------------------------------
+[debug] [2020-04-04T18:15:14.745Z] 
+[debug] [2020-04-04T18:15:14.754Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-04T18:15:14.754Z] > authorizing via signed-in user
+[info] i  emulators: Starting emulators: functions
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project vaidarcerto-org. This may result in unexpected behavior.
+[debug] [2020-04-04T18:15:16.798Z] [hub] writing locator at C:\Users\tulio\AppData\Local\Temp\hub-vaidarcerto-org.json
+[info] +  hub: emulator hub started at http://localhost:4400
+[warn] !  Your requested "node" version "8" doesn't match your global version "12"
+[info] +  functions: functions emulator started at http://localhost:5001
+[info] i  functions: Watching "D:\Projetos\id49\vaidarcerto.org\functions" for Cloud Functions...
+[debug] [2020-04-04T18:15:18.861Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-04-04T18:15:18.861Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-04-04T18:15:18.862Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-04-04T18:15:18.862Z] [worker-~diagnostic~-c6791fe9-6463-4cb6-9f35-23c42838ad78]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\26756
+[debug] [2020-04-04T18:15:18.863Z] [worker-~diagnostic~-c6791fe9-6463-4cb6-9f35-23c42838ad78]: BUSY
+[debug] [2020-04-04T18:15:19.176Z] [runtime-status] [26756] Functions runtime initialized. {"cwd":"D:\\Projetos\\id49\\vaidarcerto.org\\functions","node_version":"12.10.0"}
+[debug] [2020-04-04T18:15:19.176Z] [runtime-status] [26756] Disabled runtime features: undefined
+[debug] [2020-04-04T18:15:19.178Z] [runtime-status] [26756] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"D:\\Projetos\\id49\\vaidarcerto.org\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-04-04T18:15:19.179Z] [runtime-status] [26756] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"D:\\Projetos\\id49\\vaidarcerto.org\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-04-04T18:15:19.466Z] [runtime-status] [26756] Found google-gax at D:\Projetos\id49\vaidarcerto.org\functions\node_modules\google-gax\build\src\index.js
+[debug] [2020-04-04T18:15:19.466Z] [runtime-status] [26756] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"},{"name":"google-gax","status":"mocked"}]
+[debug] [2020-04-04T18:15:19.500Z] [runtime-status] [26756] Checked functions.config() {"config":{}}
+[debug] [2020-04-04T18:15:19.500Z] [runtime-status] [26756] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"D:\\Projetos\\id49\\vaidarcerto.org\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-04-04T18:15:19.501Z] [runtime-status] [26756] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"D:\\Projetos\\id49\\vaidarcerto.org\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-04-04T18:15:19.501Z] [runtime-status] [26756] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"D:\\Projetos\\id49\\vaidarcerto.org\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-04-04T18:15:19.550Z] [runtime-status] [26756] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.10.0","resolution":"D:\\Projetos\\id49\\vaidarcerto.org\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[info] +  functions[api]: http function initialized (http://localhost:5001/vaidarcerto-org/us-central1/api).
+[info] +  emulators: All emulators started, it is now safe to connect.
+[debug] [2020-04-04T18:15:19.724Z] [worker-~diagnostic~-c6791fe9-6463-4cb6-9f35-23c42838ad78]: IDLE
+[debug] [2020-04-04T18:15:31.191Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T18:15:31.192Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T18:15:31.193Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pou --> api
+[debug] [2020-04-04T18:15:31.204Z] [worker-pool] addWorker(api)
+[debug] [2020-04-04T18:15:31.204Z] [worker-pool] Adding worker with key api, total=1
+[debug] [2020-04-04T18:15:31.204Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T18:15:31.204Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T18:15:31.205Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T18:15:31.287Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-04-04T18:15:31.287Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-04-04T18:15:31.287Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pous --> api
+[debug] [2020-04-04T18:15:31.291Z] [worker-pool] addWorker(api)
+[debug] [2020-04-04T18:15:31.291Z] [worker-pool] Adding worker with key api, total=2
+[debug] [2020-04-04T18:15:31.291Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T18:15:31.291Z] [worker-api-1ac1c4f6-c717-4183-aa2e-1815e6e9a96d]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\2520
+[debug] [2020-04-04T18:15:31.291Z] [worker-api-1ac1c4f6-c717-4183-aa2e-1815e6e9a96d]: BUSY
+[debug] [2020-04-04T18:15:31.410Z] [work-queue] {"queueLength":1,"workRunningCount":2}
+[debug] [2020-04-04T18:15:31.411Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-04-04T18:15:31.411Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pouso --> api
+[debug] [2020-04-04T18:15:31.414Z] [worker-pool] addWorker(api)
+[debug] [2020-04-04T18:15:31.414Z] [worker-pool] Adding worker with key api, total=3
+[debug] [2020-04-04T18:15:31.414Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T18:15:31.414Z] [worker-api-a9b9e3b0-16ea-4312-93ea-af028e7a214b]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\29152
+[debug] [2020-04-04T18:15:31.414Z] [worker-api-a9b9e3b0-16ea-4312-93ea-af028e7a214b]: BUSY
+[debug] [2020-04-04T18:15:31.533Z] [runtime-status] [27828] Functions runtime initialized. {"cwd":"D:\\Projetos\\id49\\vaidarcerto.org\\functions","node_version":"12.10.0"}
+[debug] [2020-04-04T18:15:31.534Z] [runtime-status] [27828] Disabled runtime features: undefined
+[debug] [2020-04-04T18:15:31.536Z] [runtime-status] [27828] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"D:\\Projetos\\id49\\vaidarcerto.org\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-04-04T18:15:31.538Z] [runtime-status] [27828] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"D:\\Projetos\\id49\\vaidarcerto.org\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-04-04T18:15:31.642Z] [runtime-status] [2520] Functions runtime initialized. {"cwd":"D:\\Projetos\\id49\\vaidarcerto.org\\functions","node_version":"12.10.0"}
+[debug] [2020-04-04T18:15:31.644Z] [runtime-status] [2520] Disabled runtime features: undefined
+[debug] [2020-04-04T18:15:31.646Z] [runtime-status] [2520] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"D:\\Projetos\\id49\\vaidarcerto.org\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-04-04T18:15:31.647Z] [runtime-status] [2520] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"D:\\Projetos\\id49\\vaidarcerto.org\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-04-04T18:15:31.724Z] [runtime-status] [27828] Found google-gax at D:\Projetos\id49\vaidarcerto.org\functions\node_modules\google-gax\build\src\index.js
+[debug] [2020-04-04T18:15:31.724Z] [runtime-status] [27828] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"},{"name":"google-gax","status":"mocked"}]
+[debug] [2020-04-04T18:15:31.732Z] [runtime-status] [29152] Functions runtime initialized. {"cwd":"D:\\Projetos\\id49\\vaidarcerto.org\\functions","node_version":"12.10.0"}
+[debug] [2020-04-04T18:15:31.733Z] [runtime-status] [29152] Disabled runtime features: undefined
+[debug] [2020-04-04T18:15:31.735Z] [runtime-status] [29152] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"D:\\Projetos\\id49\\vaidarcerto.org\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-04-04T18:15:31.736Z] [runtime-status] [29152] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"D:\\Projetos\\id49\\vaidarcerto.org\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-04-04T18:15:31.762Z] [runtime-status] [27828] Checked functions.config() {"config":{}}
+[debug] [2020-04-04T18:15:31.762Z] [runtime-status] [27828] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"D:\\Projetos\\id49\\vaidarcerto.org\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-04-04T18:15:31.763Z] [runtime-status] [27828] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"D:\\Projetos\\id49\\vaidarcerto.org\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-04-04T18:15:31.763Z] [runtime-status] [27828] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"D:\\Projetos\\id49\\vaidarcerto.org\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-04-04T18:15:31.802Z] [runtime-status] [27828] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.10.0","resolution":"D:\\Projetos\\id49\\vaidarcerto.org\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2020-04-04T18:15:31.831Z] [runtime-status] [2520] Found google-gax at D:\Projetos\id49\vaidarcerto.org\functions\node_modules\google-gax\build\src\index.js
+[debug] [2020-04-04T18:15:31.832Z] [runtime-status] [2520] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"},{"name":"google-gax","status":"mocked"}]
+[debug] [2020-04-04T18:15:31.899Z] [runtime-status] [2520] Checked functions.config() {"config":{}}
+[debug] [2020-04-04T18:15:31.900Z] [runtime-status] [2520] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"D:\\Projetos\\id49\\vaidarcerto.org\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-04-04T18:15:31.902Z] [runtime-status] [2520] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"D:\\Projetos\\id49\\vaidarcerto.org\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-04-04T18:15:31.902Z] [runtime-status] [2520] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"D:\\Projetos\\id49\\vaidarcerto.org\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-04-04T18:15:31.911Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T18:15:31.912Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T18:15:31.912Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T18:15:31.915Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T18:15:31.917Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T18:15:31.927Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T18:15:31.935Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T18:15:31.937Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T18:15:31.937Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-04-04T18:15:31.949Z] [runtime-status] [2520] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.10.0","resolution":"D:\\Projetos\\id49\\vaidarcerto.org\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2020-04-04T18:15:31.954Z] [runtime-status] [29152] Found google-gax at D:\Projetos\id49\vaidarcerto.org\functions\node_modules\google-gax\build\src\index.js
+[debug] [2020-04-04T18:15:31.954Z] [runtime-status] [29152] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"},{"name":"google-gax","status":"mocked"}]
+[debug] [2020-04-04T18:15:31.992Z] [runtime-status] [29152] Checked functions.config() {"config":{}}
+[debug] [2020-04-04T18:15:31.993Z] [runtime-status] [29152] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"D:\\Projetos\\id49\\vaidarcerto.org\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-04-04T18:15:31.994Z] [runtime-status] [29152] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"D:\\Projetos\\id49\\vaidarcerto.org\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-04-04T18:15:31.994Z] [runtime-status] [29152] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"D:\\Projetos\\id49\\vaidarcerto.org\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-04-04T18:15:32.028Z] [runtime-status] [29152] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.10.0","resolution":"D:\\Projetos\\id49\\vaidarcerto.org\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2020-04-04T18:15:32.032Z] [runtime-status] [2520] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T18:15:32.033Z] [runtime-status] [2520] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T18:15:32.033Z] [runtime-status] [2520] Running api in mode HTTPS
+[debug] [2020-04-04T18:15:32.035Z] [runtime-status] [2520] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\2520
+[debug] [2020-04-04T18:15:32.038Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T18:15:32.045Z] [runtime-status] [2520] Ephemeral server handling GET request
+[debug] [2020-04-04T18:15:32.052Z] [runtime-status] [2520] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T18:15:32.056Z] [worker-api-1ac1c4f6-c717-4183-aa2e-1815e6e9a96d]: IDLE
+[debug] [2020-04-04T18:15:32.056Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T18:15:32.112Z] [runtime-status] [29152] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T18:15:32.112Z] [runtime-status] [29152] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T18:15:32.112Z] [runtime-status] [29152] Running api in mode HTTPS
+[debug] [2020-04-04T18:15:32.115Z] [runtime-status] [29152] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\29152
+[debug] [2020-04-04T18:15:32.116Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T18:15:32.123Z] [runtime-status] [29152] Ephemeral server handling GET request
+[debug] [2020-04-04T18:15:32.128Z] [runtime-status] [29152] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T18:15:32.131Z] [worker-api-a9b9e3b0-16ea-4312-93ea-af028e7a214b]: IDLE
+[debug] [2020-04-04T18:15:32.131Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T18:15:57.002Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T18:15:57.002Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T18:15:57.002Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=ita --> api
+[debug] [2020-04-04T18:15:57.002Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T18:15:57.003Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T18:15:57.003Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T18:15:57.003Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T18:15:57.004Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T18:15:57.004Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T18:15:57.004Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T18:15:57.004Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T18:15:57.007Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T18:15:57.009Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T18:15:57.013Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-04-04T18:15:57.013Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-04-04T18:15:57.013Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=itaj --> api
+[debug] [2020-04-04T18:15:57.013Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T18:15:57.013Z] [worker-api-1ac1c4f6-c717-4183-aa2e-1815e6e9a96d]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\2520
+[debug] [2020-04-04T18:15:57.013Z] [worker-api-1ac1c4f6-c717-4183-aa2e-1815e6e9a96d]: BUSY
+[debug] [2020-04-04T18:15:57.014Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T18:15:57.014Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T18:15:57.014Z] [runtime-status] [2520] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T18:15:57.015Z] [runtime-status] [2520] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T18:15:57.015Z] [runtime-status] [2520] Running api in mode HTTPS
+[debug] [2020-04-04T18:15:57.015Z] [runtime-status] [2520] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\2520
+[debug] [2020-04-04T18:15:57.015Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T18:15:57.017Z] [runtime-status] [2520] Ephemeral server handling GET request
+[debug] [2020-04-04T18:15:57.019Z] [runtime-status] [2520] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T18:15:57.020Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-04-04T18:15:57.020Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-04-04T18:15:57.021Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=itaju --> api
+[debug] [2020-04-04T18:15:57.021Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T18:15:57.021Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T18:15:57.021Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T18:15:57.021Z] [worker-api-1ac1c4f6-c717-4183-aa2e-1815e6e9a96d]: IDLE
+[debug] [2020-04-04T18:15:57.021Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T18:15:57.021Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T18:15:57.027Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T18:15:57.027Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T18:15:57.027Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T18:15:57.028Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T18:15:57.028Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T18:15:57.030Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T18:15:57.031Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T18:15:57.031Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T18:15:57.100Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T18:15:57.100Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T18:15:57.100Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=itajub --> api
+[debug] [2020-04-04T18:15:57.100Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T18:15:57.100Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T18:15:57.100Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T18:15:57.101Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T18:15:57.101Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T18:15:57.101Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T18:15:57.101Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T18:15:57.102Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T18:15:57.102Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T18:15:57.104Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T18:15:57.107Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T18:15:57.108Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T18:15:57.237Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T18:15:57.237Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T18:15:57.237Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=itajuba --> api
+[debug] [2020-04-04T18:15:57.238Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T18:15:57.239Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T18:15:57.239Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T18:15:57.240Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T18:15:57.241Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T18:15:57.241Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T18:15:57.242Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T18:15:57.242Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T18:15:57.243Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T18:15:57.245Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T18:15:57.248Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T18:15:57.248Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T18:15:58.538Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T18:15:58.538Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T18:15:58.538Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=itajub --> api
+[debug] [2020-04-04T18:15:58.538Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T18:15:58.538Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T18:15:58.538Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T18:15:58.539Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T18:15:58.540Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T18:15:58.540Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T18:15:58.540Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T18:15:58.541Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T18:15:58.543Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T18:15:58.546Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T18:15:58.550Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T18:15:58.550Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T18:22:41.210Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T18:22:41.211Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T18:22:41.211Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/AP?str=pou --> api
+[debug] [2020-04-04T18:22:41.211Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T18:22:41.211Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T18:22:41.211Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T18:22:41.211Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T18:22:41.212Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T18:22:41.212Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T18:22:41.212Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T18:22:41.213Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T18:22:41.214Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T18:22:41.215Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T18:22:41.216Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T18:22:41.216Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T18:22:41.217Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T18:22:41.217Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T18:22:41.217Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/AP?str=pous --> api
+[debug] [2020-04-04T18:22:41.217Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T18:22:41.217Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T18:22:41.217Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T18:22:41.227Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T18:22:41.228Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T18:22:41.228Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T18:22:41.228Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T18:22:41.228Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T18:22:41.229Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T18:22:41.231Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T18:22:41.231Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T18:22:41.231Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T18:22:41.232Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T18:22:41.233Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T18:22:41.233Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/AP?str=pouso --> api
+[debug] [2020-04-04T18:22:41.233Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T18:22:41.233Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T18:22:41.233Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T18:22:41.241Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T18:22:41.242Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T18:22:41.243Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T18:22:41.243Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T18:22:41.244Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T18:22:41.245Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T18:22:41.247Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T18:22:41.248Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T18:22:41.248Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T18:22:47.377Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T18:22:47.377Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T18:22:47.377Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/AP?str=pouso --> api
+[debug] [2020-04-04T18:22:47.377Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T18:22:47.377Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T18:22:47.377Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T18:22:47.377Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T18:22:47.378Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T18:22:47.378Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T18:22:47.378Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T18:22:47.379Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T18:22:47.379Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T18:22:47.380Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T18:22:47.381Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T18:22:47.381Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T18:27:08.406Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T18:27:08.406Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T18:27:08.406Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/AP?str=pou --> api
+[debug] [2020-04-04T18:27:08.407Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T18:27:08.407Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T18:27:08.407Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T18:27:08.408Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T18:27:08.411Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T18:27:08.411Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T18:27:08.411Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T18:27:08.413Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T18:27:08.415Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T18:27:08.419Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T18:27:08.421Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T18:27:08.421Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T18:27:09.249Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T18:27:09.249Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T18:27:09.249Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/AP?str=pous --> api
+[debug] [2020-04-04T18:27:09.249Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T18:27:09.249Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T18:27:09.249Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T18:27:09.250Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T18:27:09.250Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T18:27:09.251Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T18:27:09.251Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T18:27:09.251Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T18:27:09.252Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T18:27:09.253Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T18:27:09.254Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T18:27:09.254Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T18:27:10.649Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T18:27:10.650Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T18:27:10.650Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/AP?str=pou --> api
+[debug] [2020-04-04T18:27:10.650Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T18:27:10.650Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T18:27:10.650Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T18:27:10.651Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T18:27:10.653Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T18:27:10.653Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T18:27:10.653Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T18:27:10.653Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T18:27:10.654Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T18:27:10.656Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T18:27:10.657Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T18:27:10.657Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T18:27:17.484Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T18:27:17.484Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T18:27:17.484Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pou --> api
+[debug] [2020-04-04T18:27:17.484Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T18:27:17.484Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T18:27:17.484Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T18:27:17.484Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T18:27:17.485Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T18:27:17.485Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T18:27:17.485Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T18:27:17.486Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T18:27:17.486Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T18:27:17.488Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T18:27:17.489Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T18:27:17.489Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T18:27:17.649Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T18:27:17.649Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T18:27:17.649Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pous --> api
+[debug] [2020-04-04T18:27:17.649Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T18:27:17.649Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T18:27:17.649Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T18:27:17.650Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T18:27:17.651Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T18:27:17.651Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T18:27:17.651Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T18:27:17.652Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T18:27:17.653Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T18:27:17.657Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T18:27:17.658Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T18:27:17.658Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T18:27:17.764Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T18:27:17.764Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T18:27:17.764Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pouso --> api
+[debug] [2020-04-04T18:27:17.764Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T18:27:17.764Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T18:27:17.764Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T18:27:17.764Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T18:27:17.765Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T18:27:17.765Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T18:27:17.766Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T18:27:17.766Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T18:27:17.767Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T18:27:17.768Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T18:27:17.769Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T18:27:17.769Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T20:49:42.988Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T20:49:43.001Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T20:49:43.002Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pou --> api
+[debug] [2020-04-04T20:49:43.003Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T20:49:43.004Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T20:49:43.004Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T20:49:43.006Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-04-04T20:49:43.006Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-04-04T20:49:43.006Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pous --> api
+[debug] [2020-04-04T20:49:43.006Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T20:49:43.006Z] [worker-api-1ac1c4f6-c717-4183-aa2e-1815e6e9a96d]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\2520
+[debug] [2020-04-04T20:49:43.006Z] [worker-api-1ac1c4f6-c717-4183-aa2e-1815e6e9a96d]: BUSY
+[debug] [2020-04-04T20:49:43.007Z] [work-queue] {"queueLength":1,"workRunningCount":2}
+[debug] [2020-04-04T20:49:43.008Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-04-04T20:49:43.008Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pouso --> api
+[debug] [2020-04-04T20:49:43.008Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T20:49:43.008Z] [worker-api-a9b9e3b0-16ea-4312-93ea-af028e7a214b]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\29152
+[debug] [2020-04-04T20:49:43.008Z] [worker-api-a9b9e3b0-16ea-4312-93ea-af028e7a214b]: BUSY
+[debug] [2020-04-04T20:49:43.052Z] [runtime-status] [2520] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T20:49:43.055Z] [runtime-status] [2520] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T20:49:43.055Z] [runtime-status] [2520] Running api in mode HTTPS
+[debug] [2020-04-04T20:49:43.055Z] [runtime-status] [2520] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\2520
+[debug] [2020-04-04T20:49:43.057Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T20:49:43.057Z] [runtime-status] [29152] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T20:49:43.058Z] [runtime-status] [29152] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T20:49:43.058Z] [runtime-status] [29152] Running api in mode HTTPS
+[debug] [2020-04-04T20:49:43.059Z] [runtime-status] [29152] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\29152
+[debug] [2020-04-04T20:49:43.059Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T20:49:43.063Z] [runtime-status] [2520] Ephemeral server handling GET request
+[debug] [2020-04-04T20:49:43.064Z] [runtime-status] [29152] Ephemeral server handling GET request
+[debug] [2020-04-04T20:49:43.072Z] [runtime-status] [2520] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T20:49:43.074Z] [runtime-status] [29152] Ephemeral server survived.
+[debug] [2020-04-04T20:49:43.074Z] [worker-api-1ac1c4f6-c717-4183-aa2e-1815e6e9a96d]: IDLE
+[debug] [2020-04-04T20:49:43.074Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T20:49:43.075Z] [worker-api-a9b9e3b0-16ea-4312-93ea-af028e7a214b]: IDLE
+[debug] [2020-04-04T20:49:43.075Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T20:49:43.105Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T20:49:43.106Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T20:49:43.106Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T20:49:43.110Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T20:49:43.111Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T20:49:43.114Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T20:49:43.121Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T20:49:43.122Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T20:49:43.122Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T20:50:46.665Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T20:50:46.665Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T20:50:46.665Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/AC?str=mas --> api
+[debug] [2020-04-04T20:50:46.665Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T20:50:46.665Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T20:50:46.665Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T20:50:46.666Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T20:50:46.667Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T20:50:46.667Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T20:50:46.667Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T20:50:46.668Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T20:50:46.669Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T20:50:46.670Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T20:50:46.671Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T20:50:46.671Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T20:50:48.511Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T20:50:48.511Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T20:50:48.511Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/AC?str=toc --> api
+[debug] [2020-04-04T20:50:48.511Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T20:50:48.511Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T20:50:48.511Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T20:50:48.512Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T20:50:48.513Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T20:50:48.513Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T20:50:48.513Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T20:50:48.513Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T20:50:48.514Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T20:50:48.515Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T20:50:48.516Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T20:50:48.516Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T20:50:50.842Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T20:50:50.843Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T20:50:50.843Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/AC?str=alt --> api
+[debug] [2020-04-04T20:50:50.843Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T20:50:50.843Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T20:50:50.843Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T20:50:50.844Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T20:50:50.849Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T20:50:50.850Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T20:50:50.850Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T20:50:50.851Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T20:50:50.852Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T20:50:50.853Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T20:50:50.854Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T20:50:50.854Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T20:50:50.917Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T20:50:50.917Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T20:50:50.917Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/AC?str=alto --> api
+[debug] [2020-04-04T20:50:50.917Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T20:50:50.917Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T20:50:50.918Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T20:50:50.918Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T20:50:50.919Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T20:50:50.919Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T20:50:50.919Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T20:50:50.919Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T20:50:50.920Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T20:50:50.920Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T20:50:50.922Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T20:50:50.922Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T20:50:52.000Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T20:50:52.000Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T20:50:52.000Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/AC?str=alt --> api
+[debug] [2020-04-04T20:50:52.001Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T20:50:52.001Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T20:50:52.001Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T20:50:52.001Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T20:50:52.003Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T20:50:52.003Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T20:50:52.004Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T20:50:52.004Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T20:50:52.006Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T20:50:52.008Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T20:50:52.010Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T20:50:52.010Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T20:50:52.469Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T20:50:52.469Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T20:50:52.469Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/AC?str=ale --> api
+[debug] [2020-04-04T20:50:52.469Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T20:50:52.469Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T20:50:52.470Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T20:50:52.470Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T20:50:52.472Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T20:50:52.472Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T20:50:52.473Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T20:50:52.474Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T20:50:52.477Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T20:50:52.483Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T20:50:52.485Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T20:50:52.485Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T20:50:53.177Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T20:50:53.177Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T20:50:53.177Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/AC?str=aleg --> api
+[debug] [2020-04-04T20:50:53.177Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T20:50:53.177Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T20:50:53.177Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T20:50:53.178Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T20:50:53.179Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T20:50:53.179Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T20:50:53.179Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T20:50:53.180Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T20:50:53.180Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T20:50:53.181Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T20:50:53.182Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T20:50:53.184Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T20:50:53.863Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T20:50:53.863Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T20:50:53.863Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/AC?str=alegr --> api
+[debug] [2020-04-04T20:50:53.863Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T20:50:53.863Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T20:50:53.864Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T20:50:53.865Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T20:50:53.867Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T20:50:53.867Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T20:50:53.867Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T20:50:53.868Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T20:50:53.870Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T20:50:53.872Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T20:50:53.873Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T20:50:53.874Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T20:50:53.928Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T20:50:53.929Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T20:50:53.929Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/AC?str=alegre --> api
+[debug] [2020-04-04T20:50:53.929Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T20:50:53.929Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T20:50:53.929Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T20:50:53.929Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T20:50:53.960Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T20:50:53.960Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T20:50:53.960Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T20:50:53.960Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T20:50:53.961Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T20:50:53.962Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T20:50:53.963Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T20:50:53.963Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T20:50:54.111Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T20:50:54.111Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T20:50:54.111Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/AC?str=alegr --> api
+[debug] [2020-04-04T20:50:54.111Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T20:50:54.111Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T20:50:54.111Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T20:50:54.112Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T20:50:54.112Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T20:50:54.113Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T20:50:54.113Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T20:50:54.113Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T20:50:54.114Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T20:50:54.115Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T20:50:54.116Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T20:50:54.116Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T20:50:54.269Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T20:50:54.269Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T20:50:54.269Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/AC?str=aleg --> api
+[debug] [2020-04-04T20:50:54.269Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T20:50:54.269Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T20:50:54.269Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T20:50:54.270Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T20:50:54.272Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T20:50:54.272Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T20:50:54.272Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T20:50:54.273Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T20:50:54.277Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T20:50:54.280Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T20:50:54.282Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T20:50:54.282Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T20:50:54.435Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T20:50:54.436Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T20:50:54.436Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/AC?str=ale --> api
+[debug] [2020-04-04T20:50:54.436Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T20:50:54.436Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T20:50:54.436Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T20:50:54.437Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T20:50:54.439Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T20:50:54.439Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T20:50:54.440Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T20:50:54.442Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T20:50:54.444Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T20:50:54.446Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T20:50:54.448Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T20:50:54.448Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T20:51:01.826Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T20:51:01.826Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T20:51:01.827Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/AL?str=mac --> api
+[debug] [2020-04-04T20:51:01.827Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T20:51:01.827Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T20:51:01.827Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T20:51:01.828Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T20:51:01.830Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T20:51:01.830Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T20:51:01.831Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T20:51:01.831Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T20:51:01.833Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T20:51:01.836Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T20:51:01.838Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T20:51:01.838Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T21:09:59.222Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T21:09:59.222Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T21:09:59.223Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pou --> api
+[debug] [2020-04-04T21:09:59.223Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T21:09:59.223Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T21:09:59.223Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T21:09:59.223Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T21:09:59.224Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T21:09:59.224Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T21:09:59.224Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T21:09:59.225Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T21:09:59.226Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T21:09:59.230Z] [runtime-status] [27828] Ephemeral server survived.
+[debug] [2020-04-04T21:09:59.230Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-04-04T21:09:59.230Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-04-04T21:09:59.230Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pous --> api
+[debug] [2020-04-04T21:09:59.230Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T21:09:59.230Z] [worker-api-1ac1c4f6-c717-4183-aa2e-1815e6e9a96d]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\2520
+[debug] [2020-04-04T21:09:59.230Z] [worker-api-1ac1c4f6-c717-4183-aa2e-1815e6e9a96d]: BUSY
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T21:09:59.231Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T21:09:59.231Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T21:09:59.231Z] [runtime-status] [2520] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T21:09:59.232Z] [runtime-status] [2520] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T21:09:59.232Z] [runtime-status] [2520] Running api in mode HTTPS
+[debug] [2020-04-04T21:09:59.232Z] [runtime-status] [2520] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\2520
+[debug] [2020-04-04T21:09:59.233Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T21:09:59.234Z] [runtime-status] [2520] Ephemeral server handling GET request
+[debug] [2020-04-04T21:09:59.236Z] [runtime-status] [2520] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T21:09:59.237Z] [worker-api-1ac1c4f6-c717-4183-aa2e-1815e6e9a96d]: IDLE
+[debug] [2020-04-04T21:09:59.237Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T21:09:59.237Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T21:09:59.238Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T21:09:59.238Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pouso --> api
+[debug] [2020-04-04T21:09:59.238Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T21:09:59.238Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T21:09:59.238Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T21:09:59.240Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T21:09:59.241Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T21:09:59.241Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T21:09:59.241Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T21:09:59.242Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T21:09:59.242Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T21:09:59.243Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T21:09:59.244Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T21:09:59.244Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T21:14:09.338Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T21:14:09.338Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T21:14:09.338Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pou --> api
+[debug] [2020-04-04T21:14:09.338Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T21:14:09.338Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T21:14:09.338Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T21:14:09.339Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T21:14:09.340Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T21:14:09.340Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T21:14:09.341Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T21:14:09.342Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T21:14:09.343Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T21:14:09.345Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T21:14:09.346Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T21:14:09.346Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T21:14:09.347Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T21:14:09.347Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T21:14:09.347Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pous --> api
+[debug] [2020-04-04T21:14:09.347Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T21:14:09.347Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T21:14:09.347Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T21:14:09.356Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T21:14:09.357Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T21:14:09.357Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T21:14:09.357Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T21:14:09.357Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T21:14:09.358Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T21:14:09.361Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T21:14:09.362Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T21:14:09.362Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T21:14:09.362Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T21:14:09.362Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T21:14:09.363Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pouso --> api
+[debug] [2020-04-04T21:14:09.363Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T21:14:09.363Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T21:14:09.363Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T21:14:09.371Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T21:14:09.372Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T21:14:09.372Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T21:14:09.372Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T21:14:09.372Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T21:14:09.374Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T21:14:09.375Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T21:14:09.378Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T21:14:09.378Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T21:16:21.436Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T21:16:21.436Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T21:16:21.436Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=ita --> api
+[debug] [2020-04-04T21:16:21.436Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T21:16:21.436Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T21:16:21.436Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T21:16:21.436Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T21:16:21.437Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T21:16:21.437Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T21:16:21.444Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T21:16:21.445Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T21:16:21.445Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T21:16:21.447Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T21:16:21.447Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T21:16:21.447Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T21:16:21.448Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T21:16:21.448Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T21:16:21.448Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=itaj --> api
+[debug] [2020-04-04T21:16:21.448Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T21:16:21.448Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T21:16:21.448Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T21:16:21.457Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T21:16:21.458Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T21:16:21.458Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T21:16:21.458Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T21:16:21.458Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T21:16:21.459Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T21:16:21.462Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T21:16:21.463Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T21:16:21.463Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T21:19:44.132Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T21:19:44.132Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T21:19:44.132Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pou --> api
+[debug] [2020-04-04T21:19:44.132Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T21:19:44.132Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T21:19:44.132Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T21:19:44.133Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T21:19:44.134Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T21:19:44.134Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T21:19:44.134Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T21:19:44.135Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T21:19:44.135Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T21:19:44.137Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T21:19:44.138Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T21:19:44.138Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T21:19:44.139Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T21:19:44.139Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T21:19:44.139Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pous --> api
+[debug] [2020-04-04T21:19:44.139Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T21:19:44.139Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T21:19:44.139Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T21:19:44.147Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T21:19:44.148Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T21:19:44.148Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T21:19:44.148Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T21:19:44.149Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T21:19:44.149Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T21:19:44.152Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T21:19:44.153Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-04-04T21:19:44.153Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-04-04T21:19:44.153Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pouso --> api
+[debug] [2020-04-04T21:19:44.153Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T21:19:44.153Z] [worker-api-1ac1c4f6-c717-4183-aa2e-1815e6e9a96d]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\2520
+[debug] [2020-04-04T21:19:44.153Z] [worker-api-1ac1c4f6-c717-4183-aa2e-1815e6e9a96d]: BUSY
+[debug] [2020-04-04T21:19:44.154Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T21:19:44.154Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T21:19:44.154Z] [runtime-status] [2520] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T21:19:44.155Z] [runtime-status] [2520] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T21:19:44.155Z] [runtime-status] [2520] Running api in mode HTTPS
+[debug] [2020-04-04T21:19:44.155Z] [runtime-status] [2520] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\2520
+[debug] [2020-04-04T21:19:44.156Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T21:19:44.157Z] [runtime-status] [2520] Ephemeral server handling GET request
+[debug] [2020-04-04T21:19:44.163Z] [runtime-status] [2520] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T21:19:44.164Z] [worker-api-1ac1c4f6-c717-4183-aa2e-1815e6e9a96d]: IDLE
+[debug] [2020-04-04T21:19:44.164Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T22:08:21.927Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T22:08:21.929Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T22:08:21.929Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pou --> api
+[debug] [2020-04-04T22:08:21.929Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T22:08:21.930Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T22:08:21.930Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T22:08:21.938Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T22:08:21.941Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T22:08:21.941Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T22:08:21.943Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T22:08:21.946Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T22:08:21.949Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T22:08:21.954Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T22:08:21.956Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-04-04T22:08:21.956Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-04-04T22:08:21.956Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pous --> api
+[debug] [2020-04-04T22:08:21.956Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T22:08:21.956Z] [worker-api-1ac1c4f6-c717-4183-aa2e-1815e6e9a96d]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\2520
+[debug] [2020-04-04T22:08:21.956Z] [worker-api-1ac1c4f6-c717-4183-aa2e-1815e6e9a96d]: BUSY
+[debug] [2020-04-04T22:08:21.957Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T22:08:21.957Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T22:08:21.961Z] [runtime-status] [2520] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T22:08:21.964Z] [runtime-status] [2520] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T22:08:21.964Z] [runtime-status] [2520] Running api in mode HTTPS
+[debug] [2020-04-04T22:08:21.965Z] [runtime-status] [2520] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\2520
+[debug] [2020-04-04T22:08:21.968Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T22:08:21.970Z] [runtime-status] [2520] Ephemeral server handling GET request
+[debug] [2020-04-04T22:08:21.974Z] [runtime-status] [2520] Ephemeral server survived.
+[debug] [2020-04-04T22:08:21.975Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-04-04T22:08:21.975Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-04-04T22:08:21.975Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pouso --> api
+[debug] [2020-04-04T22:08:21.975Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T22:08:21.975Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T22:08:21.975Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T22:08:21.976Z] [worker-api-1ac1c4f6-c717-4183-aa2e-1815e6e9a96d]: IDLE
+[debug] [2020-04-04T22:08:21.976Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T22:08:21.976Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T22:08:21.976Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T22:08:21.976Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T22:08:21.977Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T22:08:21.977Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T22:08:21.978Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T22:08:21.979Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T22:08:21.979Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T22:08:21.979Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T22:10:09.899Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T22:10:09.899Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T22:10:09.899Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pou --> api
+[debug] [2020-04-04T22:10:09.899Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T22:10:09.900Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T22:10:09.900Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T22:10:09.900Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T22:10:09.902Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T22:10:09.902Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T22:10:09.903Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T22:10:09.904Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T22:10:09.906Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T22:10:09.924Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T22:10:09.926Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-04-04T22:10:09.926Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-04-04T22:10:09.926Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pous --> api
+[debug] [2020-04-04T22:10:09.926Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T22:10:09.927Z] [worker-api-1ac1c4f6-c717-4183-aa2e-1815e6e9a96d]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\2520
+[debug] [2020-04-04T22:10:09.927Z] [worker-api-1ac1c4f6-c717-4183-aa2e-1815e6e9a96d]: BUSY
+[debug] [2020-04-04T22:10:09.927Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T22:10:09.927Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T22:10:09.928Z] [runtime-status] [2520] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T22:10:09.929Z] [runtime-status] [2520] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T22:10:09.929Z] [runtime-status] [2520] Running api in mode HTTPS
+[debug] [2020-04-04T22:10:09.929Z] [runtime-status] [2520] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\2520
+[debug] [2020-04-04T22:10:09.930Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T22:10:09.931Z] [runtime-status] [2520] Ephemeral server handling GET request
+[debug] [2020-04-04T22:10:09.933Z] [runtime-status] [2520] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T22:10:09.934Z] [worker-api-1ac1c4f6-c717-4183-aa2e-1815e6e9a96d]: IDLE
+[debug] [2020-04-04T22:10:09.934Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T22:10:09.934Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T22:10:09.934Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T22:10:09.934Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pouso --> api
+[debug] [2020-04-04T22:10:09.934Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T22:10:09.934Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T22:10:09.935Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T22:10:09.935Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T22:10:09.937Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T22:10:09.937Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T22:10:09.938Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T22:10:09.938Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T22:10:09.939Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T22:10:09.940Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T22:10:09.941Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T22:10:09.941Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T22:22:16.484Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T22:22:16.484Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T22:22:16.485Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=puo --> api
+[debug] [2020-04-04T22:22:16.485Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T22:22:16.485Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T22:22:16.485Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T22:22:16.486Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T22:22:16.491Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T22:22:16.491Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T22:22:16.492Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T22:22:16.493Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T22:22:16.496Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T22:22:16.500Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T22:22:16.501Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T22:22:16.501Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T22:22:16.836Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T22:22:16.837Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T22:22:16.837Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pou --> api
+[debug] [2020-04-04T22:22:16.837Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T22:22:16.837Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T22:22:16.837Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T22:22:16.838Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T22:22:16.839Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T22:22:16.839Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T22:22:16.839Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T22:22:16.840Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T22:22:16.841Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T22:22:16.843Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T22:22:16.844Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T22:22:16.844Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T22:22:17.034Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T22:22:17.034Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T22:22:17.034Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pous --> api
+[debug] [2020-04-04T22:22:17.035Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T22:22:17.035Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T22:22:17.035Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T22:22:17.036Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T22:22:17.038Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T22:22:17.038Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T22:22:17.040Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T22:22:17.041Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T22:22:17.042Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T22:22:17.043Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T22:22:17.044Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T22:22:17.044Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T22:24:26.200Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T22:24:26.200Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T22:24:26.200Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pou --> api
+[debug] [2020-04-04T22:24:26.201Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T22:24:26.201Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T22:24:26.202Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T22:24:26.204Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T22:24:26.213Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T22:24:26.214Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T22:24:26.214Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T22:24:26.217Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T22:24:26.222Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T22:24:26.225Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T22:24:26.226Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T22:24:26.226Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T22:24:26.237Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T22:24:26.238Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T22:24:26.238Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pous --> api
+[debug] [2020-04-04T22:24:26.238Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T22:24:26.238Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T22:24:26.238Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T22:24:26.239Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T22:24:26.240Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T22:24:26.240Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T22:24:26.240Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T22:24:26.241Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T22:24:26.243Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T22:24:26.245Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T22:24:26.246Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T22:24:26.247Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T22:25:13.005Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T22:25:13.005Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T22:25:13.006Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pou --> api
+[debug] [2020-04-04T22:25:13.006Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T22:25:13.006Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T22:25:13.006Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T22:25:13.008Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T22:25:13.010Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T22:25:13.010Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T22:25:13.010Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T22:25:13.011Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T22:25:13.013Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T22:25:13.048Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T22:25:13.050Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-04-04T22:25:13.051Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-04-04T22:25:13.051Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pous --> api
+[debug] [2020-04-04T22:25:13.051Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T22:25:13.051Z] [worker-api-1ac1c4f6-c717-4183-aa2e-1815e6e9a96d]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\2520
+[debug] [2020-04-04T22:25:13.051Z] [worker-api-1ac1c4f6-c717-4183-aa2e-1815e6e9a96d]: BUSY
+[debug] [2020-04-04T22:25:13.051Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T22:25:13.051Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T22:25:13.052Z] [runtime-status] [2520] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T22:25:13.053Z] [runtime-status] [2520] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T22:25:13.053Z] [runtime-status] [2520] Running api in mode HTTPS
+[debug] [2020-04-04T22:25:13.053Z] [runtime-status] [2520] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\2520
+[debug] [2020-04-04T22:25:13.055Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T22:25:13.056Z] [runtime-status] [2520] Ephemeral server handling GET request
+[debug] [2020-04-04T22:25:13.063Z] [runtime-status] [2520] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T22:25:13.064Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-04-04T22:25:13.064Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-04-04T22:25:13.065Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pouso --> api
+[debug] [2020-04-04T22:25:13.065Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T22:25:13.065Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T22:25:13.065Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T22:25:13.065Z] [worker-api-1ac1c4f6-c717-4183-aa2e-1815e6e9a96d]: IDLE
+[debug] [2020-04-04T22:25:13.065Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T22:25:13.066Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T22:25:13.067Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T22:25:13.067Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T22:25:13.067Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T22:25:13.068Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T22:25:13.069Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T22:25:13.071Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T22:25:13.072Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T22:25:13.073Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T22:28:05.717Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T22:28:05.717Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T22:28:05.736Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pou --> api
+[debug] [2020-04-04T22:28:05.736Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T22:28:05.736Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T22:28:05.737Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T22:28:05.738Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T22:28:05.741Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T22:28:05.742Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T22:28:05.742Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T22:28:05.745Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T22:28:05.749Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T22:28:05.754Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T22:28:05.758Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-04-04T22:28:05.758Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-04-04T22:28:05.758Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pous --> api
+[debug] [2020-04-04T22:28:05.759Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T22:28:05.759Z] [worker-api-1ac1c4f6-c717-4183-aa2e-1815e6e9a96d]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\2520
+[debug] [2020-04-04T22:28:05.760Z] [worker-api-1ac1c4f6-c717-4183-aa2e-1815e6e9a96d]: BUSY
+[debug] [2020-04-04T22:28:05.760Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T22:28:05.761Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T22:28:05.761Z] [runtime-status] [2520] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T22:28:05.764Z] [runtime-status] [2520] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T22:28:05.765Z] [runtime-status] [2520] Running api in mode HTTPS
+[debug] [2020-04-04T22:28:05.765Z] [runtime-status] [2520] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\2520
+[debug] [2020-04-04T22:28:05.766Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T22:28:05.767Z] [runtime-status] [2520] Ephemeral server handling GET request
+[debug] [2020-04-04T22:28:05.770Z] [runtime-status] [2520] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T22:28:05.771Z] [worker-api-1ac1c4f6-c717-4183-aa2e-1815e6e9a96d]: IDLE
+[debug] [2020-04-04T22:28:05.771Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T22:28:05.772Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T22:28:05.772Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T22:28:05.773Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pouso --> api
+[debug] [2020-04-04T22:28:05.773Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T22:28:05.773Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T22:28:05.773Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T22:28:05.776Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T22:28:05.777Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T22:28:05.777Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T22:28:05.778Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T22:28:05.779Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T22:28:05.780Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T22:28:05.785Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T22:28:05.786Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T22:28:05.787Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T22:28:44.797Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T22:28:44.797Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T22:28:44.797Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pou --> api
+[debug] [2020-04-04T22:28:44.797Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T22:28:44.797Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T22:28:44.797Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T22:28:44.798Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T22:28:44.799Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T22:28:44.799Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T22:28:44.799Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T22:28:44.799Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T22:28:44.800Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T22:28:44.801Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T22:28:44.801Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T22:28:44.802Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T22:28:44.802Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T22:28:44.802Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T22:28:44.802Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pous --> api
+[debug] [2020-04-04T22:28:44.802Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T22:28:44.802Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T22:28:44.802Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T22:28:44.811Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T22:28:44.812Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T22:28:44.812Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T22:28:44.812Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T22:28:44.813Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T22:28:44.813Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T22:28:44.814Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T22:28:44.815Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T22:28:44.816Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T22:28:44.816Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T22:28:44.816Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T22:28:44.816Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pouso --> api
+[debug] [2020-04-04T22:28:44.816Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T22:28:44.816Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T22:28:44.816Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T22:28:44.824Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T22:28:44.826Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T22:28:44.826Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T22:28:44.826Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T22:28:44.826Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T22:28:44.827Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T22:28:44.828Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T22:28:44.882Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T22:28:44.882Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T22:34:19.078Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T22:34:19.078Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T22:34:19.078Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pou --> api
+[debug] [2020-04-04T22:34:19.078Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T22:34:19.078Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T22:34:19.078Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T22:34:19.079Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T22:34:19.082Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T22:34:19.082Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T22:34:19.082Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T22:34:19.082Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T22:34:19.083Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T22:34:19.085Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T22:34:19.086Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-04-04T22:34:19.295Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-04-04T22:34:19.295Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pous --> api
+[debug] [2020-04-04T22:34:19.295Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T22:34:19.295Z] [worker-api-1ac1c4f6-c717-4183-aa2e-1815e6e9a96d]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\2520
+[debug] [2020-04-04T22:34:19.295Z] [worker-api-1ac1c4f6-c717-4183-aa2e-1815e6e9a96d]: BUSY
+[debug] [2020-04-04T22:34:19.295Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T22:34:19.296Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T22:34:19.296Z] [runtime-status] [2520] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T22:34:19.297Z] [runtime-status] [2520] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T22:34:19.297Z] [runtime-status] [2520] Running api in mode HTTPS
+[debug] [2020-04-04T22:34:19.297Z] [runtime-status] [2520] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\2520
+[debug] [2020-04-04T22:34:19.298Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T22:34:19.298Z] [runtime-status] [2520] Ephemeral server handling GET request
+[debug] [2020-04-04T22:34:19.300Z] [runtime-status] [2520] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T22:34:19.300Z] [worker-api-1ac1c4f6-c717-4183-aa2e-1815e6e9a96d]: IDLE
+[debug] [2020-04-04T22:34:19.300Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T22:34:59.361Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T22:34:59.361Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T22:34:59.361Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=ppo --> api
+[debug] [2020-04-04T22:34:59.361Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T22:34:59.361Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T22:34:59.361Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T22:34:59.362Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T22:34:59.364Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T22:34:59.364Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T22:34:59.364Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T22:34:59.365Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T22:34:59.367Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T22:34:59.369Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T22:34:59.371Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T22:34:59.371Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T22:35:00.099Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T22:35:00.099Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T22:35:00.099Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pou --> api
+[debug] [2020-04-04T22:35:00.099Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T22:35:00.100Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T22:35:00.100Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T22:35:00.100Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T22:35:00.101Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T22:35:00.101Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T22:35:00.101Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T22:35:00.102Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T22:35:00.102Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T22:35:00.104Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T22:35:00.104Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T22:35:00.105Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T22:35:00.262Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T22:35:00.262Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T22:35:00.262Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pous --> api
+[debug] [2020-04-04T22:35:00.262Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T22:35:00.262Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T22:35:00.262Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T22:35:00.263Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T22:35:00.265Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T22:35:00.265Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T22:35:00.265Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T22:35:00.265Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T22:35:00.267Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T22:35:00.482Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T22:35:00.484Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T22:35:00.484Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-04T22:37:10.770Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-04T22:37:10.771Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T22:37:10.771Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pou --> api
+[debug] [2020-04-04T22:37:10.771Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T22:37:10.771Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T22:37:10.771Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T22:37:10.772Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T22:37:10.774Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T22:37:10.774Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T22:37:10.774Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T22:37:10.775Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T22:37:10.776Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T22:37:10.778Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T22:37:10.781Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-04-04T22:37:10.781Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-04-04T22:37:10.781Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pous --> api
+[debug] [2020-04-04T22:37:10.781Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T22:37:10.781Z] [worker-api-1ac1c4f6-c717-4183-aa2e-1815e6e9a96d]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\2520
+[debug] [2020-04-04T22:37:10.781Z] [worker-api-1ac1c4f6-c717-4183-aa2e-1815e6e9a96d]: BUSY
+[debug] [2020-04-04T22:37:10.782Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T22:37:10.782Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T22:37:10.782Z] [runtime-status] [2520] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T22:37:10.785Z] [runtime-status] [2520] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T22:37:10.786Z] [runtime-status] [2520] Running api in mode HTTPS
+[debug] [2020-04-04T22:37:10.786Z] [runtime-status] [2520] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\2520
+[debug] [2020-04-04T22:37:10.787Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T22:37:10.788Z] [runtime-status] [2520] Ephemeral server handling GET request
+[debug] [2020-04-04T22:37:10.793Z] [runtime-status] [2520] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T22:37:10.795Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-04-04T22:37:10.795Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-04-04T22:37:10.795Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pouso --> api
+[debug] [2020-04-04T22:37:10.795Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-04T22:37:10.796Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T22:37:10.796Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-04T22:37:10.796Z] [worker-api-1ac1c4f6-c717-4183-aa2e-1815e6e9a96d]: IDLE
+[debug] [2020-04-04T22:37:10.796Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-04T22:37:10.797Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-04T22:37:10.798Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-04T22:37:10.798Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-04T22:37:10.798Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-04T22:37:10.799Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-04T22:37:10.801Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-04T22:37:10.802Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-04T22:37:10.802Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-04T22:37:10.803Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-05T02:21:27.902Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-05T02:21:27.904Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-05T02:21:27.904Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/SP?str=sao --> api
+[debug] [2020-04-05T02:21:27.905Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-05T02:21:27.905Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-05T02:21:27.905Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-05T02:21:27.916Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-05T02:21:27.920Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-05T02:21:27.920Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-05T02:21:27.923Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-05T02:21:27.927Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-05T02:21:27.932Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-05T02:21:27.981Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-05T02:21:27.983Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-05T02:21:27.983Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-05T02:21:28.983Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-05T02:21:28.984Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-05T02:21:28.984Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/SP?str=sao --> api
+[debug] [2020-04-05T02:21:28.984Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-05T02:21:28.984Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-05T02:21:28.984Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-05T02:21:28.985Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-05T02:21:28.986Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-05T02:21:28.987Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-05T02:21:28.987Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-05T02:21:28.988Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-05T02:21:28.990Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-05T02:21:28.993Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-05T02:21:28.994Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-05T02:21:28.994Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-05T02:21:29.355Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-05T02:21:29.355Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-05T02:21:29.355Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/SP?str=sao%20p --> api
+[debug] [2020-04-05T02:21:29.355Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-05T02:21:29.355Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-05T02:21:29.355Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-05T02:21:29.355Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-05T02:21:29.356Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-05T02:21:29.357Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-05T02:21:29.357Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-05T02:21:29.357Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-05T02:21:29.358Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-05T02:21:29.359Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-05T02:21:29.360Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-05T02:21:29.360Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-05T02:21:30.262Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-05T02:21:30.263Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-05T02:21:30.263Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/SP?str=sao%20pa --> api
+[debug] [2020-04-05T02:21:30.263Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-05T02:21:30.263Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-05T02:21:30.263Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-05T02:21:30.263Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-05T02:21:30.264Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-05T02:21:30.264Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-05T02:21:30.268Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-05T02:21:30.268Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-05T02:21:30.269Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-05T02:21:30.270Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-05T02:21:30.271Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-05T02:21:30.271Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-05T02:21:32.263Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-05T02:21:32.263Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-05T02:21:32.263Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/SP?str=sao%20p --> api
+[debug] [2020-04-05T02:21:32.263Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-05T02:21:32.263Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-05T02:21:32.264Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-05T02:21:32.264Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-05T02:21:32.265Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-05T02:21:32.265Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-05T02:21:32.265Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-05T02:21:32.265Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-05T02:21:32.268Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-05T02:21:32.270Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-05T02:21:32.280Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-05T02:21:32.280Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-05T02:21:32.758Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-05T02:21:32.758Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-05T02:21:32.759Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/SP?str=sao --> api
+[debug] [2020-04-05T02:21:32.759Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-05T02:21:32.759Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-05T02:21:32.759Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-05T02:21:32.759Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-05T02:21:32.760Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-05T02:21:32.760Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-05T02:21:32.760Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-05T02:21:32.760Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-05T02:21:32.761Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-05T02:21:32.761Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-05T02:21:32.762Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-05T02:21:32.762Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-05T02:21:32.793Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-05T02:21:32.793Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-05T02:21:32.793Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/SP?str=sao --> api
+[debug] [2020-04-05T02:21:32.793Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-05T02:21:32.794Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-05T02:21:32.794Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-05T02:21:32.794Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-05T02:21:32.796Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-05T02:21:32.796Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-05T02:21:32.796Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-05T02:21:32.797Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-05T02:21:32.798Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-05T02:21:32.799Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-05T02:21:32.801Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-05T02:21:32.801Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-05T02:21:33.743Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-05T02:21:33.743Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-05T02:21:33.743Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/SP?str=pau --> api
+[debug] [2020-04-05T02:21:33.743Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-05T02:21:33.744Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-05T02:21:33.744Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-05T02:21:33.744Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-05T02:21:33.746Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-05T02:21:33.746Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-05T02:21:33.746Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-05T02:21:33.747Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-05T02:21:33.748Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-05T02:21:33.750Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-05T02:21:33.751Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-05T02:21:33.751Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-05T02:21:33.937Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-05T02:21:33.937Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-05T02:21:33.938Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/SP?str=paul --> api
+[debug] [2020-04-05T02:21:33.938Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-05T02:21:33.938Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-05T02:21:33.938Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-05T02:21:33.938Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-05T02:21:33.939Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-05T02:21:33.939Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-05T02:21:33.939Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-05T02:21:33.940Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-05T02:21:33.942Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-05T02:21:33.943Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-05T02:21:33.943Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-05T02:21:33.943Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-05T02:21:34.099Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-05T02:21:34.099Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-05T02:21:34.100Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/SP?str=paulo --> api
+[debug] [2020-04-05T02:21:34.100Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-05T02:21:34.100Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-05T02:21:34.100Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-05T02:21:34.101Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-05T02:21:34.102Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-05T02:21:34.102Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-05T02:21:34.102Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-05T02:21:34.103Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-05T02:21:34.104Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-05T02:21:34.106Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-05T02:21:34.108Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-05T02:21:34.108Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-05T03:50:11.162Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-05T03:50:11.164Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-05T03:50:11.164Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=itj --> api
+[debug] [2020-04-05T03:50:11.164Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-05T03:50:11.165Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-05T03:50:11.165Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-05T03:50:11.172Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-05T03:50:11.174Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-05T03:50:11.174Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-05T03:50:11.175Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-05T03:50:11.177Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-05T03:50:11.179Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-05T03:50:11.183Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-05T03:50:11.184Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-05T03:50:11.184Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-05T03:50:11.257Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-05T03:50:11.257Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-05T03:50:11.258Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=ita --> api
+[debug] [2020-04-05T03:50:11.258Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-05T03:50:11.258Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-05T03:50:11.258Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-05T03:50:11.258Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-05T03:50:11.259Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-05T03:50:11.259Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-05T03:50:11.259Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-05T03:50:11.260Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-05T03:50:11.261Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-05T03:50:11.265Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-05T03:50:11.266Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-05T03:50:11.266Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-05T03:50:11.360Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-05T03:50:11.360Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-05T03:50:11.360Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=itaj --> api
+[debug] [2020-04-05T03:50:11.360Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-05T03:50:11.360Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-05T03:50:11.361Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-05T03:50:11.361Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-05T03:50:11.362Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-05T03:50:11.363Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-05T03:50:11.363Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-05T03:50:11.363Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-05T03:50:11.364Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-05T03:50:11.366Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-05T03:50:11.367Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-05T03:50:11.367Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-05T04:07:23.374Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-05T04:07:23.375Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-05T04:07:23.375Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pou --> api
+[debug] [2020-04-05T04:07:23.375Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-05T04:07:23.375Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-05T04:07:23.375Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-05T04:07:23.375Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-05T04:07:23.376Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-05T04:07:23.376Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-05T04:07:23.376Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-05T04:07:23.377Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-05T04:07:23.380Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-05T04:07:23.381Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-05T04:07:23.382Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-05T04:07:23.382Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-05T04:07:23.382Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-05T04:07:23.382Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-05T04:07:23.382Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pous --> api
+[debug] [2020-04-05T04:07:23.382Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-05T04:07:23.382Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-05T04:07:23.382Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-05T04:07:23.392Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-05T04:07:23.392Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-05T04:07:23.393Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-05T04:07:23.393Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-05T04:07:23.393Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-05T04:07:23.394Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-05T04:07:23.395Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-05T04:07:23.396Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-05T04:07:23.396Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-05T04:10:37.621Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-05T04:10:37.621Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-05T04:10:37.621Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pou --> api
+[debug] [2020-04-05T04:10:37.621Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-05T04:10:37.622Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-05T04:10:37.622Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[debug] [2020-04-05T04:10:37.623Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-05T04:10:37.625Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-05T04:10:37.625Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-05T04:10:37.625Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-05T04:10:37.626Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-05T04:10:37.628Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-05T04:10:37.632Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-05T04:10:37.634Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-04-05T04:10:37.634Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-04-05T04:10:37.634Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pous --> api
+[debug] [2020-04-05T04:10:37.634Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-05T04:10:37.634Z] [worker-api-1ac1c4f6-c717-4183-aa2e-1815e6e9a96d]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\2520
+[debug] [2020-04-05T04:10:37.635Z] [worker-api-1ac1c4f6-c717-4183-aa2e-1815e6e9a96d]: BUSY
+[debug] [2020-04-05T04:10:37.635Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-05T04:10:37.635Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-05T04:10:37.649Z] [runtime-status] [2520] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-05T04:10:37.651Z] [runtime-status] [2520] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-05T04:10:37.651Z] [runtime-status] [2520] Running api in mode HTTPS
+[debug] [2020-04-05T04:10:37.655Z] [runtime-status] [2520] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\2520
+[debug] [2020-04-05T04:10:37.656Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-05T04:10:37.660Z] [runtime-status] [2520] Ephemeral server handling GET request
+[debug] [2020-04-05T04:10:37.665Z] [runtime-status] [2520] Ephemeral server survived.
+[debug] [2020-04-05T04:10:37.666Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-04-05T04:10:37.666Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-04-05T04:10:37.666Z] Accepted request GET /vaidarcerto-org/us-central1/api/city/MG?str=pouso --> api
+[debug] [2020-04-05T04:10:37.666Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-04-05T04:10:37.666Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: Assigning socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-05T04:10:37.666Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: BUSY
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-05T04:10:37.667Z] [worker-api-1ac1c4f6-c717-4183-aa2e-1815e6e9a96d]: IDLE
+[debug] [2020-04-05T04:10:37.667Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-05T04:10:37.667Z] [runtime-status] [27828] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-04-05T04:10:37.668Z] [runtime-status] [27828] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-04-05T04:10:37.668Z] [runtime-status] [27828] Running api in mode HTTPS
+[debug] [2020-04-05T04:10:37.668Z] [runtime-status] [27828] Attempting to listen to socketPath: \\?\pipe\D:\Projetos\id49\vaidarcerto.org\functions\27828
+[debug] [2020-04-05T04:10:37.669Z] [functions] Runtime ready! Sending request!
+[debug] [2020-04-05T04:10:37.670Z] [runtime-status] [27828] Ephemeral server handling GET request
+[debug] [2020-04-05T04:10:37.672Z] [runtime-status] [27828] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-04-05T04:10:37.674Z] [worker-api-4d8a75a9-07e8-4792-8e3a-211197ac87ff]: IDLE
+[debug] [2020-04-05T04:10:37.674Z] [work-queue] {"queueLength":0,"workRunningCount":0}

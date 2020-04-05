@@ -1,22 +1,26 @@
 import React, { createContext, useContext, useEffect, useState } from 'react'
 import firebase from '../components/firebase'
 import { navigateTo } from 'gatsby'
+
 export const AuthContext = createContext()
+
 export const useAuth = () => {
   const value = useContext(AuthContext)
   return value
 }
 export const AuthProvider = ({ children }) => {
-  const [auth, setAuth] = useState({ isAuth: false, name: '' })
+  const [auth, setAuth] = useState({ isAuth: false, name: '', isAuthReady: false, role: 'user' })
   const [error, setError] = useState('')
   useEffect(() => {
-    firebase
+    const unsubscribe = firebase
       .auth()
       .onAuthStateChanged(user => {
         if (user) {
           setAuth({
             isAuth: true,
             name: user.displayName || user.email,
+            isAuthReady: true,
+            uid: user.uid,
             emailVerified: user.emailVerified,
             email: user.email
           })
@@ -24,11 +28,41 @@ export const AuthProvider = ({ children }) => {
           setAuth({
             isAuth: false,
             name: '',
+            isAuthReady: true,
             emailVerified: false
           })
         }
       })
+      return () => {
+        unsubscribe()
+      }
   }, [])
+  useEffect(() => {
+    // checking user role
+    let unsubscribe = null
+    if(auth.uid){
+      const db = firebase.firestore()
+      unsubscribe = db
+        .collection('users')
+        .doc(auth.uid)
+        .onSnapshot(doc => {
+          const user = doc.data()
+          if(user){
+            setAuth(oldAuth => {
+              return {
+                ...oldAuth,
+                role: user.role
+              }
+            })
+          }
+        })
+    }
+    return () => {
+      if(unsubscribe){
+        unsubscribe()
+      }
+    }
+  }, [auth.isAuthReady, auth.isAuth, auth.uid])
   const signOut = async() => {
     try{
       await firebase
@@ -51,8 +85,8 @@ export const AuthProvider = ({ children }) => {
       .then(() => {
         navigateTo('/restrito')
       })
-      .catch(function(error) {
-        setError(error.code)
+      .catch(error => {
+        setError('E-mail ou senha inválidos.')
       })
   }
   const authFB = () => {
