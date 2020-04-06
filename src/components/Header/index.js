@@ -36,7 +36,7 @@ const Header = ({ home }) => {
         <div className={`w-full flex-grow lg:flex lg:items-center lg:w-auto ${showMenu} lg:block mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20`} id='nav-content'>
           <ul className='list-reset lg:flex justify-end flex-1 items-center'>
             <li className='mr-3'>
-              <Link to='/' activeClassName='font-bold' className='inline-block py-2 px-4 text-black no-underline'>Início</Link>
+              <Link to='/ideias/producao-de-mascaras-caseiras/' activeClassName='font-bold' className='inline-block py-2 px-4 text-black no-underline'>Ideias compartilháveis</Link>
             </li>
             <li className='mr-3'>
               <Link to='/aprender' activeClassName='font-bold' className='inline-block py-2 px-4 text-black no-underline'>Aprender</Link>
