@@ -2,7 +2,6 @@ import React from 'react'
 import { graphql, Link } from 'gatsby'
 import LayoutAprender from '../components/LayoutAprender'
 
-
 const Aprender = ({ data }) => {
   return (
     <LayoutAprender title={data.learningPaths.title}>
@@ -18,7 +17,9 @@ const Aprender = ({ data }) => {
                 <h2 className='font-sans break-normal text-gray-900 pt-6 pb-2 text-xl'>{node.node.title}</h2>
               </div>
               <div className='mb-4'>
-                <iframe width='560' height='315' src={node.node.videoUrl} frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen title={node.node.title}></iframe>
+                <div className='relative overflow-hidden w-full h-auto' style={{paddingBottom: '56%'}}>
+                  <iframe className='absolute pin-t pin-l w-full h-full' src={node.node.videoUrl} frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen title={node.node.title}></iframe>
+                </div>
               </div>
               <div>
                 {node.node.description}
