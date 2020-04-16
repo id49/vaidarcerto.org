@@ -2,11 +2,7 @@ import React from 'react'
 import Layout from '../components/Layout'
 import Seo from '../components/Seo'
 import CardCity from '../components/CardCity'
-
-import marketing from '../assets/undraw_mobile_marketing_iqbr.png'
-import education from '../assets/undraw_Graduation_ktn0.png'
-
-import { useStaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql, Link } from 'gatsby'
 import { findCityByStr } from '../lib/city'
 
 const Hero = () => {
@@ -16,11 +12,11 @@ const Hero = () => {
       <div className="container mx-auto flex flex-wrap flex-col md:flex-row items-center">
         <div className="flex flex-col w-full md:w-3/5 justify-center items-start text-center md:text-left">
           <p className="uppercase tracking-loose w-full text-white">Uma iniciativa sem fins-lucrativos</p>
-          <h1 className="my-4 text-5xl font-bold leading-tight text-white">Para ajudar pequenas empresas e profissionais liberais</h1>
-          <p className="leading-normal text-2xl mb-8 text-white">a superarem este momento difícil com muito conhecimento e reconhecimento.</p>
+          <h1 className="my-4 text-3xl font-bold leading-tight text-white">Para ajudar pequenas empresas e profissionais liberais</h1>
+          <p className="leading-normal text-1xl mb-8 text-white">a superarem este momento difícil com muito conhecimento e reconhecimento.</p>
         </div>
-        <div className="w-full md:w-2/5 py-6 text-center">
-          <img className="w-full md:w-4/5 z-50" src={require('../assets/hero.png')} alt='' />
+        <div className="md:w-2/5 pt-2 pb-4 text-center">
+          <img className="w-auto z-50 h-48" src={require('../assets/hero.png')} alt='' />
         </div>
       </div>
     </div>
@@ -28,7 +24,7 @@ const Hero = () => {
 }
 const EndWave = () => {
   return (
-    <div className="relative -mt-12 lg:-mt-24">
+    <div className="relative -mt-12 lg:-mt-22">
       <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg">
       <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
       <g transform="translate(-2.000000, 44.000000)" fill="#FFFFFF" fillRule="nonzero">
@@ -47,19 +43,28 @@ const EndWave = () => {
 
 const Callouts = () => {
   return(
-    <div className='container mx-auto'>
-      <h3 className="w-full py-2 text-5xl font-bold leading-tight text-center text-gray-800">Como funciona?</h3>
-      {/* <p className="text-gray-600 mb-8">Acreditamos que o pequeno empresário ou profissional liberal pode estar em 3 situações: com atividades totalmente suspensas, atividades adaptadas (trabalhando somente com entregas ou com aulas online) ou trabalhando horas extras por se tratar de um serviço essencial.</p> */}
-      <div className="flex flex-wrap">
-        <div className="flex flex-col items-center pr-8 w-5/6 sm:w-1/2 py-6">
-          <img src={marketing} width={320} alt='' />
-          <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">Divulgação</h3>
-          <p className="text-gray-600 text-center mb-8">Para quem está com as atividades adaptadas ou intensificadas, provemos divulgação. Abaixo temos uma lista de empresas e profissionais que estão trabalhando em modo delivery ou adaptados. Em breve poderá ser adicionado empresas/profissionais de outras cidades.</p>
+    <div className='lg:container mx-4 lg:mx-auto'>
+      <h3 className="w-full py-2 text-3xl font-bold leading-tight text-gray-800">Como podemos ajudar?</h3>
+      <div className="md:flex flex-wrap ">
+        <div className="flex flex-col md:w-1/3">
+          <div className='shadow m-1 p-4 h-full'>
+            <h3 className="text-xl text-gray-800 font-bold mb-2">Divulgação</h3>
+            <p className="text-gray-600 mb-8">Para quem está com as atividades adaptadas ou intensificadas, provemos divulgação. Abaixo temos uma lista de cidades com empresas e profissionais que estão trabalhando em modo delivery ou adaptados. Crie sua conta e comece a cadastrar pequenos comerciantes e profissionais liberais da sua cidade.</p>
+          </div>
         </div>
-        <div className="flex flex-col items-center pl-8 w-full sm:w-1/2 py-6">
-          <img src={education} width={320} alt='' />
-          <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">Educação direta ao ponto</h3>
-          <p className="text-gray-600 text-center mb-8">Para quem está com as atividades adaptadas, provemos materiais educativos de como lidar com a adaptação (atender online, por exemplo). Já quem está com as atividades paradas, o objetivo é aprender novas habilidades que farão a diferença no momento de recuperação.</p>
+        <div className="flex flex-col w-full md:w-1/3">
+          <div className='shadow m-1 p-4 h-full'>
+            <h3 className="text-xl text-gray-800 font-bold mb-2">Educação direta ao ponto</h3>
+            <p className="text-gray-600">Para quem está com as atividades adaptadas, provemos materiais educativos de como lidar com a adaptação (atender online, por exemplo). Já quem está com as atividades paradas, o objetivo é aprender novas habilidades que farão a diferença no momento de recuperação.</p>
+            <Link to='/aprender' className='p-4 bg-blue-500 hover:bg-blue-300 rounded text-center block mt-2'>Acessar seção aprender</Link>
+          </div>
+        </div>
+        <div className="flex flex-col w-full md:w-1/3">
+          <div className='shadow m-1 p-4 h-full'>
+            <h3 className="text-xl text-gray-800 font-bold mb-2">Ideias replicáveis</h3>
+            <p className="text-gray-600 mb-8">Projetos e ideias que você pode replicar na sua cidade ou comunidade. Já traduzimos o manual de fabricação baseado  em uma especificação francesa para construção de máscaras de barreira de tecido.</p>
+            <Link to='/ideias/producao-de-mascaras-caseiras/'  className='p-4 bg-blue-500 hover:bg-blue-300 rounded text-center block mt-2'>Veja como fazer sua máscara</Link>
+          </div>
         </div>
       </div>
     </div>
@@ -93,7 +98,7 @@ const Index = () => {
               .distinct
               .map(findCityByStr)
               .map(city => {
-                return <CardCity  key={city.state+city.slug} city={city} />
+                return <CardCity key={city.state+city.slug} city={city} />
               })
           }
         </div>
