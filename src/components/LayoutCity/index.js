@@ -44,11 +44,11 @@ const Menu = () => {
   )
 }
 
-const Layout = ({ children, title='Aprender' }) => {
+const Layout = ({ children, title='Aprender', description='' }) => {
   return (
     <AuthProvider>
       <div className='bg-gray-100'>
-        <Seo title={title} />
+        <Seo title={title} description={description} ogDescription={description} />
         <div className='bg-grey-100'>
           <Header />
         </div>
