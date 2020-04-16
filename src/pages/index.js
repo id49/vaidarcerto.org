@@ -43,7 +43,7 @@ const EndWave = () => {
 
 const Callouts = () => {
   return(
-    <div className='lg:container mx-4 lg:mx-auto'>
+    <div className='container mx-4 lg:mx-auto'>
       <h3 className="w-full py-2 text-3xl font-bold leading-tight text-gray-800">Como podemos ajudar?</h3>
       <div className="md:flex flex-wrap ">
         <div className="flex flex-col md:w-1/3">
