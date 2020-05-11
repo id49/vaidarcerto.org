@@ -22,7 +22,8 @@ export const AuthProvider = ({ children }) => {
             isAuthReady: true,
             uid: user.uid,
             emailVerified: user.emailVerified,
-            email: user.email
+            email: user.email,
+            loggedWithEmail: user.providerData.find(provider => provider.providerId === 'password')
           })
         }else{
           setAuth({

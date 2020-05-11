@@ -6,6 +6,7 @@ import SelectCity from '../client-side-routes/SelectCity'
 import Listings from '../client-side-routes/Listings'
 import CreateListings from '../client-side-routes/CreateListings'
 import ListingsPending from '../client-side-routes/ListingsPending'
+import UpdatePassword from '../client-side-routes/UpdatePassword'
 import { useAuth } from '../lib/AuthContext'
 
 const Home = () => {
@@ -47,6 +48,7 @@ const Routes = () => {
       <Listings path='/listings/:state/:city' />
       <ListingsPending path='/pending' />
       <CreateListings path='/listings/:state/:city/create' />
+      <UpdatePassword path='/update-password' />
     </Router>
   )
 }

@@ -3,5 +3,7 @@ node_modules/
 build
 public
 firebase-private.json
-.env
 firebase-public.json
+.env
+yarn-error.log
+yarn.lock
