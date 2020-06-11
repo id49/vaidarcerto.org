@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'gatsby'
 import { useScrollPosition } from '@n8tb1t/use-scroll-position'
 import { useAuth } from '../../lib/AuthContext'
+import Dropdown from '../../components/Dropdown'
 
 const Header = ({ home }) => {
   const auth = useAuth()
@@ -49,10 +50,7 @@ const Header = ({ home }) => {
                   </React.Fragment>
               }
               { auth.isAuth && 
-                <span>
-                  <Link to='/restrito' className='hover:underline inline-block py-2 px-4 text-black no-underline'>{auth.name}</Link>
-                  |<button onClick={auth.signOut} className='inline-block py-2 px-4 text-black no-underline hover:underline'>Sair</button>
-                </span>
+                  <Dropdown auth={auth}/>
               }
             </li>
             {/*
