@@ -25,10 +25,19 @@
         "code",
         "test"
       ]
+    },
+    {
+      "login": "gcmatheusj",
+      "name": "Matheus Castro",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/38117213?v=4",
+      "profile": "https://www.linkedin.com/in/gcmatheusj/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
-  "projectName": "sigep",
-  "projectOwner": "tuliofaria",
+  "projectName": "vaidarcerto.org",
+  "projectOwner": "id49",
   "repoType": "github",
   "repoHost": "https://github.com"
 }
