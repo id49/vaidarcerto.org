@@ -116,6 +116,7 @@ status: estado da publicação. Ex: published
     <td align="center"><a href="https://tuliofaria.dev"><img src="https://avatars3.githubusercontent.com/u/103433?v=4" width="100px;" alt=""/><br /><sub><b>Tulio Faria</b></sub></a></td>
     <td align="center"><a href="https://www.linkedin.com/in/gcmatheusj/"><img src="https://avatars1.githubusercontent.com/u/38117213?v=4" width="100px;" alt=""/><br /><sub><b>Matheus Castro</b></sub></a></td>
     <td align="center"><a href="https://renatosiqueira.dev/"><img src="https://avatars1.githubusercontent.com/u/30542215?v=4" width="100px;" alt=""/><br /><sub><b>Renato Siqueira</b></sub></a></td>
+    <td align="center"><a href="https://github.com/riosjr"><img src="https://avatars1.githubusercontent.com/u/54160400?v=4" width="100px;" alt=""/><br /><sub><b>riosjr</b></sub></a></td>
   </tr>
 </table>
 
