@@ -104,3 +104,16 @@ description: descrição da empresa ou profissional
 city: cidade onde localizado
 contacts (array): lista de contatos, contendo type (tipo de contato. ex: whatsapp) e value (ex: 11-99999999). Exemplo: [{type: 'whatsapp', value: '11-9999999'}]
 status: estado da publicação. Ex: published
+
+## Colaboradores:
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://allcontributors.org) specification.
+Contributions of any kind are welcome!
